@@ -1,0 +1,13 @@
+
+CONFIG VCCAUX = "3.3" ;
+
+NET "clock" LOC = "H17"  | IOSTANDARD = LVTTL;
+NET "clock" TNM_NET = "clock" ;
+TIMESPEC "TS_clock" = PERIOD "clock" 20000 ps INPUT_JITTER 200 ps;
+
+# FTDI FT2232-chB used as USB UART
+NET "rx" LOC = "A11"  | IOSTANDARD = LVTTL | PULLUP;
+NET "tx" LOC = "A10"  | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST ;
+
+
+
