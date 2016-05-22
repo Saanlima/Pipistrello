@@ -7,15 +7,15 @@ The ise directory contains the Xilinx ISE project including Verilog HDL code.
 The waveplayer directory contains the software for the wavefile player.
 
 In order to compile the code the Microblaze gcc compiler must be in the path, it can be found here:
-<Xilinx_intall>/14.7/ISE_DS/EDK/gnu/microblaze/<platform>/bin
+(Xilinx_intall_dir)/14.7/ISE_DS/EDK/gnu/microblaze/<platform>/bin
 
 You also need to have Xilinx data2mem in the path:
-<Xilinx_intall>/14.7/ISE_DS/ISE/bin/<platform>/data2mem(.exe)
+(Xilinx_intall_dir)/14.7/ISE_DS/ISE/bin/<platform>/data2mem(.exe)
 
 A precompiled bit file is available at waveplayer/waveplayer.bit.  It communicates via a terminal @115200 baud.  Only two commands are inplemented:
 
 Play a song on the sd card:
-F<file_to_play>CR
+Ffile_to_playCR
 Reply: 0 = success, 1 = file not found, 2 = invalid wave file, 3 = unsupported wave file format
 
 Stop:
