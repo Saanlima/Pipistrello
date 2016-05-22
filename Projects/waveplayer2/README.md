@@ -9,11 +9,11 @@ The waveplayer directory contains the software for the wavefile player.
 
 In order to compile the code the Microblaze gcc compiler must be in the path, it can be found here:
 
-(Xilinx_install_dir)/14.7/ISE_DS/EDK/gnu/microblaze/<platform>/bin
+(Xilinx_install_dir)/14.7/ISE_DS/EDK/gnu/microblaze/(platform)/bin
 
 You also need to have Xilinx data2mem in the path:
 
-(Xilinx_install_dir)/14.7/ISE_DS/ISE/bin/<platform>/data2mem(.exe)
+(Xilinx_install_dir)/14.7/ISE_DS/ISE/bin/(platform)/data2mem(.exe)
 
 A precompiled bit file is available at waveplayer/waveplayer.bit.  It communicates via a terminal @115200 baud.  Only two commands are inplemented:
 
