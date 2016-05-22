@@ -1,0 +1,549 @@
+Archive member included because of file (symbol)
+
+c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(divsi3.o)
+                              ff.o (__divsi3)
+c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(mulsi3.o)
+                              mmc.o (__mulsi3)
+c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(udivsi3.o)
+                              waveplayer.o (__udivsi3)
+c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(umodsi3.o)
+                              ff.o (__umodsi3)
+c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_exception_handler.o)
+                              c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crt0.o (_exception_handler)
+c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_hw_exception_handler.o)
+                              c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crt0.o (_hw_exception_handler)
+c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_interrupt_handler.o)
+                              c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crt0.o (_interrupt_handler)
+c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_program_clean.o)
+                              c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crtinit.o (_program_clean)
+c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_program_init.o)
+                              c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crtinit.o (_program_init)
+c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libc.a(lib_a-exit.o)
+                              c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crt0.o (exit)
+c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libc.a(lib_a-impure.o)
+                              c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libc.a(lib_a-exit.o) (_global_impure_ptr)
+c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libc.a(lib_a-strncmp.o)
+                              waveplayer.o (strncmp)
+c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libc.a(lib_a-__call_atexit.o)
+                              c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libc.a(lib_a-exit.o) (__call_exitprocs)
+
+Allocating common symbols
+Common symbol       size              file
+
+rtcHour             0x1               waveplayer.o
+rtcSec              0x1               waveplayer.o
+rtcMin              0x1               waveplayer.o
+name                0x80              waveplayer.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl 0x00000050         0x0000ffb0
+mcb3_lpddr_S0_AXI_BASEADDR 0xa4000000         0x04000000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crt0.o
+LOAD c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crti.o
+LOAD c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtbegin.o
+LOAD c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crtinit.o
+                [0x00001000]                _STACK_SIZE = DEFINED (_STACK_SIZE)?_STACK_SIZE:0x1000
+                [0x00001000]                _HEAP_SIZE = DEFINED (_HEAP_SIZE)?_HEAP_SIZE:0x1000
+
+.vectors.reset  0x00000000        0x8
+ *(.vectors.reset)
+ .vectors.reset
+                0x00000000        0x8 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crt0.o
+                0x00000000                _start
+
+.vectors.sw_exception
+                0x00000008        0x8
+ *(.vectors.sw_exception)
+ .vectors.sw_exception
+                0x00000008        0x8 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crt0.o
+
+.vectors.interrupt
+                0x00000010        0x8
+ *(.vectors.interrupt)
+ .vectors.interrupt
+                0x00000010        0x8 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crt0.o
+
+.vectors.hw_exception
+                0x00000020        0x8
+ *(.vectors.hw_exception)
+ .vectors.hw_exception
+                0x00000020        0x8 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crt0.o
+
+.text           0x00000050     0x9168
+ *(.text)
+ .text          0x00000050       0x34 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crt0.o
+                0x00000050                _start1
+                0x00000080                _exit
+ .text          0x00000084        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crti.o
+ .text          0x00000084      0x124 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtbegin.o
+ .text          0x000001a8       0xb0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crtinit.o
+                0x000001a8                _crtinit
+ .text          0x00000258      0x7ac waveplayer.o
+                0x00000258                available
+                0x00000294                peek
+                0x000002dc                inbyte
+                0x000002fc                outbyte
+                0x0000031c                msleep
+                0x00000374                usleep
+                0x00000394                get_ms
+                0x000003a4                get_fattime
+                0x00000474                wav_play
+ .text          0x00000a04      0xfe4 mmc.o
+                0x00000f84                disk_initialize
+                0x000011f8                disk_status
+                0x00001214                disk_read
+                0x000013ac                disk_write
+                0x00001584                disk_ioctl
+ .text          0x000019e8     0x6d24 ff.o
+                0x00002ca8                clust2sect
+                0x00002cf4                get_fat
+                0x000030e8                put_fat
+                0x00004704                gen_numname
+                0x00004b54                f_mount
+                0x00004c7c                f_open
+                0x00004fb8                f_read
+                0x00005278                f_write
+                0x000056d8                f_sync
+                0x000058b0                f_close
+                0x000058f0                f_chdir
+                0x000059a4                f_getcwd
+                0x00005bbc                f_lseek
+                0x00005e30                f_opendir
+                0x00005f00                f_closedir
+                0x00005f30                f_readdir
+                0x00005fe8                f_stat
+                0x00006070                f_getfree
+                0x00006278                f_truncate
+                0x0000639c                f_unlink
+                0x00006528                f_mkdir
+                0x00006884                f_chmod
+                0x0000694c                f_utime
+                0x00006a54                f_rename
+                0x00006c1c                f_getlabel
+                0x00006dac                f_setlabel
+                0x0000725c                f_mkfs
+                0x00008108                f_gets
+                0x000081b8                f_putc
+                0x0000822c                f_puts
+                0x000082b0                f_printf
+ .text          0x0000870c       0xc8 ccsbcs.o
+                0x0000870c                ff_convert
+                0x00008794                ff_wtoupper
+ .text          0x000087d4       0x9c utils.o
+                0x000087d4                enable_interrupts
+                0x000087f4                disable_interrupts
+                0x00008814                enable_dcache
+                0x0000882c                enable_icache
+                0x00008844                flush_dcache
+ .text          0x00008870       0x9c c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(divsi3.o)
+                0x00008870                __divsi3
+ .text          0x0000890c       0x58 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(mulsi3.o)
+                0x0000890c                __mulsi3
+ .text          0x00008964       0xa8 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(udivsi3.o)
+                0x00008964                __udivsi3
+ .text          0x00008a0c       0xbc c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(umodsi3.o)
+                0x00008a0c                __umodsi3
+ .text          0x00008ac8        0x8 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_exception_handler.o)
+                0x00008ac8                _exception_handler
+ .text          0x00008ad0        0x8 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_hw_exception_handler.o)
+                0x00008ad0                _hw_exception_handler
+ .text          0x00008ad8        0x8 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_interrupt_handler.o)
+                0x00008ad8                _interrupt_handler
+ .text          0x00008ae0        0x8 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_program_clean.o)
+                0x00008ae0                _program_clean
+ .text          0x00008ae8        0x8 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_program_init.o)
+                0x00008ae8                _program_init
+ .text          0x00008af0       0x40 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libc.a(lib_a-exit.o)
+                0x00008af0                exit
+ .text          0x00008b30        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libc.a(lib_a-impure.o)
+ .text          0x00008b30      0x148 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libc.a(lib_a-strncmp.o)
+                0x00008b30                strncmp
+ .text          0x00008c78      0x338 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libc.a(lib_a-__call_atexit.o)
+                0x00008c78                __call_exitprocs
+ .text          0x00008fb0       0x4c c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtend.o
+ .text          0x00008ffc        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtn.o
+ *(.text.*)
+ .text.startup  0x00008ffc      0x1bc waveplayer.o
+                0x00008ffc                main
+ *(.gnu.linkonce.t.*)
+
+.init           0x000091b8       0x3c
+ *(.init)
+ .init          0x000091b8       0x18 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crti.o
+                0x000091b8                __init
+ .init          0x000091d0        0xc c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtbegin.o
+ .init          0x000091dc        0xc c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtend.o
+ .init          0x000091e8        0xc c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtn.o
+
+.fini           0x000091f4       0x20
+ *(.fini)
+ .fini          0x000091f4        0x8 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crti.o
+                0x000091f4                __fini
+ .fini          0x000091fc        0xc c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtbegin.o
+ .fini          0x00009208        0xc c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtn.o
+
+.ctors          0x00009214        0x8
+                0x00009214                __CTOR_LIST__ = .
+                0x00009214                ___CTORS_LIST___ = .
+ *crtbegin.o(.ctors)
+ .ctors         0x00009214        0x4 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtbegin.o
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+ .ctors         0x00009218        0x4 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtend.o
+                0x0000921c                __CTOR_END__ = .
+                0x0000921c                ___CTORS_END___ = .
+
+.dtors          0x0000921c        0x8
+                0x0000921c                __DTOR_LIST__ = .
+                0x0000921c                ___DTORS_LIST___ = .
+ *crtbegin.o(.dtors)
+ .dtors         0x0000921c        0x4 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtbegin.o
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ .dtors         0x00009220        0x4 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtend.o
+                0x00009220                __DTOR_END__
+                0x00009224                PROVIDE (__DTOR_END__, .)
+                0x00009224                PROVIDE (___DTORS_END___, .)
+
+.rodata         0x00009224      0x63e
+                0x00009224                __rodata_start = .
+ *(.rodata)
+ .rodata        0x00009224       0x21 waveplayer.o
+ *fill*         0x00009245        0x3 00
+ .rodata        0x00009248       0x3c mmc.o
+ .rodata        0x00009284      0x116 ff.o
+ *fill*         0x0000939a        0x2 00
+ .rodata        0x0000939c      0x4c0 ccsbcs.o
+ .rodata        0x0000985c        0x6 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libc.a(lib_a-impure.o)
+                0x0000985c                _global_impure_ptr
+ *(.rodata.*)
+ *(.gnu.linkonce.r.*)
+                0x00009862                __rodata_end = .
+
+.rela.dyn       0x00009864        0x0
+ .rela.text     0x00000000        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crt0.o
+ .rela.vectors.sw_exception
+                0x00000000        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crt0.o
+ .rela.vectors.interrupt
+                0x00000000        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crt0.o
+ .rela.vectors.hw_exception
+                0x00000000        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crt0.o
+ .rela.text.startup
+                0x00000000        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crt0.o
+ .rela.data     0x00000000        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crt0.o
+
+.sdata2         0x00009862        0x6
+                0x00009868                . = ALIGN (0x8)
+ *fill*         0x00009862        0x6 00
+                0x00009868                __sdata2_start = .
+ *(.sdata2)
+ *(.sdata2.*)
+ *(.gnu.linkonce.s2.*)
+                0x00009868                . = ALIGN (0x8)
+                0x00009868                __sdata2_end = .
+
+.sbss2          0x00009868        0x0
+                0x00009868                __sbss2_start = .
+ *(.sbss2)
+ *(.sbss2.*)
+ *(.gnu.linkonce.sb2.*)
+                0x00009868                __sbss2_end = .
+
+.data           0x00009868      0x104
+                0x00009868                . = ALIGN (0x4)
+                0x00009868                __data_start = .
+ *(.data)
+ .data          0x00009868        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crt0.o
+ .data          0x00009868        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crti.o
+ .data          0x00009868        0x8 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtbegin.o
+                0x0000986c                __dso_handle
+ .data          0x00009870        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crtinit.o
+ .data          0x00009870        0x3 waveplayer.o
+                0x00009870                rtcMday
+                0x00009871                rtcMon
+                0x00009872                rtcYear
+ .data          0x00009873        0x1 mmc.o
+ .data          0x00009874        0x0 ff.o
+ .data          0x00009874        0x0 ccsbcs.o
+ .data          0x00009874        0x0 utils.o
+ .data          0x00009874        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(divsi3.o)
+ .data          0x00009874        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(mulsi3.o)
+ .data          0x00009874        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(udivsi3.o)
+ .data          0x00009874        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(umodsi3.o)
+ .data          0x00009874        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_exception_handler.o)
+ .data          0x00009874        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_hw_exception_handler.o)
+ .data          0x00009874        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_interrupt_handler.o)
+ .data          0x00009874        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_program_clean.o)
+ .data          0x00009874        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_program_init.o)
+ .data          0x00009874        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libc.a(lib_a-exit.o)
+ .data          0x00009874       0xf4 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libc.a(lib_a-impure.o)
+                0x00009874                _impure_ptr
+ .data          0x00009968        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libc.a(lib_a-strncmp.o)
+ .data          0x00009968        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libc.a(lib_a-__call_atexit.o)
+ .data          0x00009968        0x4 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtend.o
+ .data          0x0000996c        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtn.o
+ *(.data.*)
+ *(.gnu.linkonce.d.*)
+                0x0000996c                __data_end = .
+
+.got
+ *(.got)
+
+.got1
+ *(.got1)
+
+.got2
+ *(.got2)
+
+.eh_frame       0x0000996c        0x4
+ *(.eh_frame)
+ .eh_frame      0x0000996c        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtbegin.o
+ .eh_frame      0x0000996c        0x4 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtend.o
+
+.jcr            0x00009970        0x4
+ *(.jcr)
+ .jcr           0x00009970        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtbegin.o
+ .jcr           0x00009970        0x4 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtend.o
+
+.gcc_except_table
+ *(.gcc_except_table)
+
+.sdata          0x00009974        0x4
+                0x00009978                . = ALIGN (0x8)
+ *fill*         0x00009974        0x4 00
+                0x00009978                __sdata_start = .
+ *(.sdata)
+ *(.sdata.*)
+ *(.gnu.linkonce.s.*)
+                0x00009978                __sdata_end = .
+
+.sbss           0x00009978        0x0
+                0x00009978                . = ALIGN (0x4)
+                0x00009978                __sbss_start = .
+ *(.sbss)
+ *(.sbss.*)
+ *(.gnu.linkonce.sb.*)
+                0x00009978                . = ALIGN (0x8)
+                0x00009978                __sbss_end = .
+
+.tdata          0x00009978        0x0
+                0x00009978                __tdata_start = .
+ *(.tdata)
+ *(.tdata.*)
+ *(.gnu.linkonce.td.*)
+                0x00009978                __tdata_end = .
+
+.tbss           0x00009978        0x0
+                0x00009978                __tbss_start = .
+ *(.tbss)
+ *(.tbss.*)
+ *(.gnu.linkonce.tb.*)
+                0x00009978                __tbss_end = .
+
+.bss            0x00009978      0x2b0
+                0x00009978                . = ALIGN (0x4)
+                0x00009978                __bss_start = .
+ *(.bss)
+ .bss           0x00009978        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crt0.o
+ .bss           0x00009978        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crti.o
+ .bss           0x00009978       0x20 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtbegin.o
+ .bss           0x00009998        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crtinit.o
+ .bss           0x00009998        0x0 waveplayer.o
+ .bss           0x00009998        0x4 mmc.o
+ .bss           0x0000999c      0x208 ff.o
+ .bss           0x00009ba4        0x0 ccsbcs.o
+ .bss           0x00009ba4        0x0 utils.o
+ .bss           0x00009ba4        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(divsi3.o)
+ .bss           0x00009ba4        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(mulsi3.o)
+ .bss           0x00009ba4        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(udivsi3.o)
+ .bss           0x00009ba4        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(umodsi3.o)
+ .bss           0x00009ba4        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_exception_handler.o)
+ .bss           0x00009ba4        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_hw_exception_handler.o)
+ .bss           0x00009ba4        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_interrupt_handler.o)
+ .bss           0x00009ba4        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_program_clean.o)
+ .bss           0x00009ba4        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_program_init.o)
+ .bss           0x00009ba4        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libc.a(lib_a-exit.o)
+ .bss           0x00009ba4        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libc.a(lib_a-impure.o)
+ .bss           0x00009ba4        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libc.a(lib_a-strncmp.o)
+ .bss           0x00009ba4        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libc.a(lib_a-__call_atexit.o)
+ .bss           0x00009ba4        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtend.o
+ .bss           0x00009ba4        0x0 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtn.o
+ *(.bss.*)
+ *(.gnu.linkonce.b.*)
+ *(COMMON)
+ COMMON         0x00009ba4       0x84 waveplayer.o
+                0x00009ba4                rtcHour
+                0x00009ba5                rtcSec
+                0x00009ba6                rtcMin
+                0x00009ba8                name
+                0x00009c28                . = ALIGN (0x4)
+                0x00009c28                __bss_end = .
+                0x00009978                _SDA_BASE_ = (__sdata_start + ((__sbss_end - __sdata_start) / 0x2))
+                0x00009868                _SDA2_BASE_ = (__sdata2_start + ((__sbss2_end - __sdata2_start) / 0x2))
+
+.heap           0x00009c28     0x1000
+                0x00009c28                . = ALIGN (0x8)
+                0x00009c28                _heap = .
+                0x00009c28                _heap_start = .
+                0x0000ac28                . = (. + _HEAP_SIZE)
+ *fill*         0x00009c28     0x1000 00
+                0x0000ac28                _heap_end = .
+
+.stack          0x0000ac28     0x1000
+                0x0000ac28                _stack_end = .
+                0x0000bc28                . = (. + _STACK_SIZE)
+ *fill*         0x0000ac28     0x1000 00
+                0x0000bc28                . = ALIGN (0x8)
+                0x0000bc28                _stack = .
+                0x0000bc28                __stack = _stack
+                0x0000bc28                _end = .
+LOAD waveplayer.o
+LOAD mmc.o
+LOAD ff.o
+LOAD ccsbcs.o
+LOAD utils.o
+LOAD c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a
+START GROUP
+LOAD c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a
+LOAD c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libc.a
+LOAD c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libm.a
+END GROUP
+LOAD c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a
+LOAD c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtend.o
+LOAD c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtn.o
+OUTPUT(waveplayer.elf elf32-microblazeel)
+
+.debug_line     0x00000000     0x4fa9
+ .debug_line    0x00000000       0xaa c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crt0.o
+ .debug_line    0x000000aa       0x75 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crti.o
+ .debug_line    0x0000011f       0x86 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crtinit.o
+ .debug_line    0x000001a5      0x674 waveplayer.o
+ .debug_line    0x00000819      0x70f mmc.o
+ .debug_line    0x00000f28     0x3a9b ff.o
+ .debug_line    0x000049c3       0xb8 ccsbcs.o
+ .debug_line    0x00004a7b       0x62 utils.o
+ .debug_line    0x00004add       0x8d c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(divsi3.o)
+ .debug_line    0x00004b6a       0x7c c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(mulsi3.o)
+ .debug_line    0x00004be6       0x91 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(udivsi3.o)
+ .debug_line    0x00004c77       0x95 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(umodsi3.o)
+ .debug_line    0x00004d0c       0x70 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_exception_handler.o)
+ .debug_line    0x00004d7c       0x73 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_hw_exception_handler.o)
+ .debug_line    0x00004def       0x70 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_interrupt_handler.o)
+ .debug_line    0x00004e5f       0x6c c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_program_clean.o)
+ .debug_line    0x00004ecb       0x6b c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_program_init.o)
+ .debug_line    0x00004f36       0x73 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtn.o
+
+.debug_info     0x00000000     0x40d9
+ .debug_info    0x00000000       0xad c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crt0.o
+ .debug_info    0x000000ad       0x80 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crti.o
+ .debug_info    0x0000012d       0xb4 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crtinit.o
+ .debug_info    0x000001e1      0x787 waveplayer.o
+ .debug_info    0x00000968      0x58c mmc.o
+ .debug_info    0x00000ef4     0x2943 ff.o
+ .debug_info    0x00003837      0x160 ccsbcs.o
+ .debug_info    0x00003997       0x6f utils.o
+ .debug_info    0x00003a06       0xa7 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(divsi3.o)
+ .debug_info    0x00003aad       0xa7 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(mulsi3.o)
+ .debug_info    0x00003b54       0xa8 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(udivsi3.o)
+ .debug_info    0x00003bfc       0xa8 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(umodsi3.o)
+ .debug_info    0x00003ca4       0xbf c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_exception_handler.o)
+ .debug_info    0x00003d63       0xc2 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_hw_exception_handler.o)
+ .debug_info    0x00003e25       0xbf c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_interrupt_handler.o)
+ .debug_info    0x00003ee4       0xbb c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_program_clean.o)
+ .debug_info    0x00003f9f       0xba c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_program_init.o)
+ .debug_info    0x00004059       0x80 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtn.o
+
+.debug_abbrev   0x00000000      0x94d
+ .debug_abbrev  0x00000000       0x12 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crt0.o
+ .debug_abbrev  0x00000012       0x12 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crti.o
+ .debug_abbrev  0x00000024       0x14 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crtinit.o
+ .debug_abbrev  0x00000038      0x213 waveplayer.o
+ .debug_abbrev  0x0000024b      0x25c mmc.o
+ .debug_abbrev  0x000004a7      0x327 ff.o
+ .debug_abbrev  0x000007ce       0xa5 ccsbcs.o
+ .debug_abbrev  0x00000873       0x14 utils.o
+ .debug_abbrev  0x00000887       0x14 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(divsi3.o)
+ .debug_abbrev  0x0000089b       0x14 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(mulsi3.o)
+ .debug_abbrev  0x000008af       0x14 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(udivsi3.o)
+ .debug_abbrev  0x000008c3       0x14 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(umodsi3.o)
+ .debug_abbrev  0x000008d7       0x14 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_exception_handler.o)
+ .debug_abbrev  0x000008eb       0x14 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_hw_exception_handler.o)
+ .debug_abbrev  0x000008ff       0x14 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_interrupt_handler.o)
+ .debug_abbrev  0x00000913       0x14 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_program_clean.o)
+ .debug_abbrev  0x00000927       0x14 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_program_init.o)
+ .debug_abbrev  0x0000093b       0x12 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtn.o
+
+.debug_aranges  0x00000000      0x278
+ .debug_aranges
+                0x00000000       0x40 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crt0.o
+ .debug_aranges
+                0x00000040       0x28 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crti.o
+ .debug_aranges
+                0x00000068       0x20 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crtinit.o
+ .debug_aranges
+                0x00000088       0x28 waveplayer.o
+ .debug_aranges
+                0x000000b0       0x20 mmc.o
+ .debug_aranges
+                0x000000d0       0x20 ff.o
+ .debug_aranges
+                0x000000f0       0x20 ccsbcs.o
+ .debug_aranges
+                0x00000110       0x20 utils.o
+ .debug_aranges
+                0x00000130       0x20 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(divsi3.o)
+ .debug_aranges
+                0x00000150       0x20 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(mulsi3.o)
+ .debug_aranges
+                0x00000170       0x20 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(udivsi3.o)
+ .debug_aranges
+                0x00000190       0x20 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le\libgcc.a(umodsi3.o)
+ .debug_aranges
+                0x000001b0       0x20 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_exception_handler.o)
+ .debug_aranges
+                0x000001d0       0x20 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_hw_exception_handler.o)
+ .debug_aranges
+                0x000001f0       0x20 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_interrupt_handler.o)
+ .debug_aranges
+                0x00000210       0x20 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_program_clean.o)
+ .debug_aranges
+                0x00000230       0x20 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le\libxil.a(_program_init.o)
+ .debug_aranges
+                0x00000250       0x28 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtn.o
+
+.debug_ranges   0x00000000      0x1a8
+ .debug_ranges  0x00000000       0x38 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/../../../../microblaze-xilinx-elf/lib/le/crt0.o
+ .debug_ranges  0x00000038       0x20 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crti.o
+ .debug_ranges  0x00000058       0x18 waveplayer.o
+ .debug_ranges  0x00000070      0x118 ff.o
+ .debug_ranges  0x00000188       0x20 c:/winmb/bin/../lib/gcc/microblaze-xilinx-elf/4.6.2/le/crtn.o
+
+.debug_frame    0x00000000      0x8e4
+ .debug_frame   0x00000000       0xd4 waveplayer.o
+ .debug_frame   0x000000d4      0x140 mmc.o
+ .debug_frame   0x00000214      0x6a0 ff.o
+ .debug_frame   0x000008b4       0x30 ccsbcs.o
+
+.debug_loc      0x00000000     0x4acd
+ .debug_loc     0x00000000      0x285 waveplayer.o
+ .debug_loc     0x00000285      0x69b mmc.o
+ .debug_loc     0x00000920     0x412c ff.o
+ .debug_loc     0x00004a4c       0x81 ccsbcs.o
+
+.debug_str      0x00000000      0x910
+ .debug_str     0x00000000      0x32b waveplayer.o
+                                0x3b3 (size before relaxing)
+ .debug_str     0x0000032b       0xf1 mmc.o
+                                0x220 (size before relaxing)
+ .debug_str     0x0000041c      0x4c0 ff.o
+                                0x6e8 (size before relaxing)
+ .debug_str     0x000008dc       0x34 ccsbcs.o
+                                0x112 (size before relaxing)
