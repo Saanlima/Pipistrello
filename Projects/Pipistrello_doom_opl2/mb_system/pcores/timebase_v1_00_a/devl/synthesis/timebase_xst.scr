@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "J:\Documents\Projects\Pipistrello_v2.0\MBduino\mb_system\pcores\timebase_v1_00_a\devl\synthesis\timebase_xst.prj"
+-top timebase
+-p virtex6
+-ofn "J:\Documents\Projects\Pipistrello_v2.0\MBduino\mb_system\pcores\timebase_v1_00_a\devl\synthesis\timebase_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib timebase_v1_00_a

@@ -1,0 +1,9 @@
+verilog dvi_out_native_v1_00_a D:\Documents\Projects\Pipistrello_v2.0\Pipistrello_dvi565_doom_opl2_new\mb_system\pcores\dvi_out_native_v1_00_a/hdl/verilog/timing.v
+verilog dvi_out_native_v1_00_a D:\Documents\Projects\Pipistrello_v2.0\Pipistrello_dvi565_doom_opl2_new\mb_system\pcores\dvi_out_native_v1_00_a/hdl/verilog/hdclrbar.v
+verilog dvi_out_native_v1_00_a D:\Documents\Projects\Pipistrello_v2.0\Pipistrello_dvi565_doom_opl2_new\mb_system\pcores\dvi_out_native_v1_00_a/hdl/verilog/convert_30to15_fifo.v
+verilog dvi_out_native_v1_00_a D:\Documents\Projects\Pipistrello_v2.0\Pipistrello_dvi565_doom_opl2_new\mb_system\pcores\dvi_out_native_v1_00_a/hdl/verilog/dvi_encoder.v
+verilog dvi_out_native_v1_00_a D:\Documents\Projects\Pipistrello_v2.0\Pipistrello_dvi565_doom_opl2_new\mb_system\pcores\dvi_out_native_v1_00_a/hdl/verilog/encode.v
+verilog dvi_out_native_v1_00_a D:\Documents\Projects\Pipistrello_v2.0\Pipistrello_dvi565_doom_opl2_new\mb_system\pcores\dvi_out_native_v1_00_a/hdl/verilog/dvi_out_native.v
+verilog dvi_out_native_v1_00_a D:\Documents\Projects\Pipistrello_v2.0\Pipistrello_dvi565_doom_opl2_new\mb_system\pcores\dvi_out_native_v1_00_a/hdl/verilog/DRAM16XN.v
+verilog dvi_out_native_v1_00_a D:\Documents\Projects\Pipistrello_v2.0\Pipistrello_dvi565_doom_opl2_new\mb_system\pcores\dvi_out_native_v1_00_a/hdl/verilog/serdes_n_to_1.v
+verilog work ../hdl/mb_system_dvi_out_native_0_wrapper.v

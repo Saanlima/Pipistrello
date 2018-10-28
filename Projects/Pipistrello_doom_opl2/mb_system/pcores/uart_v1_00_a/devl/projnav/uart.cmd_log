@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "J:/Documents/Projects/Pipistrello_v2.0/MBduino/mb_system/pcores/uart_v1_00_a/devl/projnav/uart.xst" -ofn "J:/Documents/Projects/Pipistrello_v2.0/MBduino/mb_system/pcores/uart_v1_00_a/devl/projnav/uart.syr" 
+xst -intstyle ise -ifn "J:/Documents/Projects/Pipistrello_v2.0/MBduino/mb_system/pcores/uart_v1_00_a/devl/projnav/uart.xst" -ofn "J:/Documents/Projects/Pipistrello_v2.0/MBduino/mb_system/pcores/uart_v1_00_a/devl/projnav/uart.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-3 uart.ngc uart.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_map.ncd uart.ngd uart.pcf 
+par -w -intstyle ise -ol high -mt off uart_map.ncd uart.ncd uart.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml uart.twx uart.ncd -o uart.twr uart.pcf 

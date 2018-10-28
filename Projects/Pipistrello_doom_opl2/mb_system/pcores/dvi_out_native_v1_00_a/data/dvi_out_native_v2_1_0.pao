@@ -1,0 +1,14 @@
+##############################################################################
+## Filename:          /home/stephenn/atlys/edk-support-pack/MyProcessorIPLib/pcores/dvi_out_native_v1_00_a/data/dvi_out_native_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Wed May 19 11:08:22 2010 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib dvi_out_native_v1_00_a timing verilog
+lib dvi_out_native_v1_00_a hdclrbar verilog
+lib dvi_out_native_v1_00_a convert_30to15_fifo verilog
+lib dvi_out_native_v1_00_a dvi_encoder verilog
+lib dvi_out_native_v1_00_a encode verilog
+lib dvi_out_native_v1_00_a dvi_out_native verilog
+lib dvi_out_native_v1_00_a DRAM16XN verilog
+lib dvi_out_native_v1_00_a serdes_n_to_1 verilog

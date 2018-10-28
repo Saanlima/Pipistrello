@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          J:\Documents\Projects\Pipistrello_v2.0\MBduino\mb_system/drivers/uart_v1_00_a/data/uart_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Wed Mar 06 22:18:47 2013 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER uart
+
+  OPTION supported_peripherals = (uart);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

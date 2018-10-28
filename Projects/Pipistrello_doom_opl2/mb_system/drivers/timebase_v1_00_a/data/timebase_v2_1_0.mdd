@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          J:\Documents\Projects\Pipistrello_v2.0\MBduino\mb_system/drivers/timebase_v1_00_a/data/timebase_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Sun Mar 03 18:31:42 2013 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER timebase
+
+  OPTION supported_peripherals = (timebase);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

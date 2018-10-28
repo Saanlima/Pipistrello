@@ -1,0 +1,6 @@
+ The following files will be modified:
+  system.mhs
+--------------------------------------
+ The following changes will be made:
+ Core axi_intc 1.03.a will be replaced by 1.04.a
+ Core microblaze 8.40.b will be replaced by 8.50.c

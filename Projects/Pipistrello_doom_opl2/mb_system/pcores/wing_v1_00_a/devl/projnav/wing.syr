@@ -1,0 +1,1463 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: wing.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "wing.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "wing"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : wing
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "J:\Documents\Projects\Pipistrello_v2.0\MBduino\mb_system\pcores\wing_v1_00_a\hdl\verilog\user_logic.v" into library work
+Parsing module <user_logic>.
+Parsing VHDL file "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <address_decoder>.
+Parsing architecture <IMP> of entity <address_decoder>.
+Parsing VHDL file "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <slave_attachment>.
+Parsing architecture <imp> of entity <slave_attachment>.
+Parsing VHDL file "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <axi_lite_ipif>.
+Parsing architecture <imp> of entity <axi_lite_ipif>.
+Parsing VHDL file "J:\Documents\Projects\Pipistrello_v2.0\MBduino\mb_system\pcores\wing_v1_00_a\hdl\vhdl\wing.vhd" into library work
+Parsing entity <wing>.
+Parsing architecture <IMP> of entity <wing>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <wing> (architecture <IMP>) with generics from library <work>.
+
+Elaborating entity <axi_lite_ipif> (architecture <imp>) with generics from library <axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <slave_attachment> (architecture <imp>) with generics from library <axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <address_decoder> (architecture <IMP>) with generics from library <axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+INFO:HDLCompiler:679 - "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" Line 417. Case statement is complete. others clause is never selected
+Going to verilog side to elaborate module user_logic
+
+Elaborating module <user_logic(WING_DWIDTH=16,PWM_DWIDTH=16,C_NUM_REG=32,C_SLV_DWIDTH=32)>.
+WARNING:HDLCompiler:413 - "J:\Documents\Projects\Pipistrello_v2.0\MBduino\mb_system\pcores\wing_v1_00_a\hdl\verilog\user_logic.v" Line 212: Result of 17-bit expression is truncated to fit in 16-bit target.
+Back to vhdl to continue elaboration
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <wing>.
+    Related source file is "J:\Documents\Projects\Pipistrello_v2.0\MBduino\mb_system\pcores\wing_v1_00_a\hdl\vhdl\wing.vhd".
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+        WING_DWIDTH = 16
+        PWM_DWIDTH = 16
+        C_S_AXI_DATA_WIDTH = 32
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
+        C_USE_WSTRB = 0
+        C_DPHASE_TIMEOUT = 8
+        C_BASEADDR = "11111111111111111111111111111111"
+        C_HIGHADDR = "00000000000000000000000000000000"
+        C_FAMILY = "virtex6"
+        C_NUM_REG = 1
+        C_NUM_MEM = 1
+        C_SLV_AWIDTH = 32
+        C_SLV_DWIDTH = 32
+    Set property "MAX_FANOUT = 10000" for signal <S_AXI_ACLK>.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "MAX_FANOUT = 10000" for signal <S_AXI_ARESETN>.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+INFO:Xst:3210 - "J:\Documents\Projects\Pipistrello_v2.0\MBduino\mb_system\pcores\wing_v1_00_a\hdl\vhdl\wing.vhd" line 291: Output port <Bus2IP_Addr> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "J:\Documents\Projects\Pipistrello_v2.0\MBduino\mb_system\pcores\wing_v1_00_a\hdl\vhdl\wing.vhd" line 291: Output port <Bus2IP_CS> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "J:\Documents\Projects\Pipistrello_v2.0\MBduino\mb_system\pcores\wing_v1_00_a\hdl\vhdl\wing.vhd" line 291: Output port <Bus2IP_RNW> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <wing> synthesized.
+
+Synthesizing Unit <axi_lite_ipif>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd".
+        C_S_AXI_DATA_WIDTH = 32
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
+        C_USE_WSTRB = 0
+        C_DPHASE_TIMEOUT = 8
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111","0000000000000000000000000000000000000000000000000000000000000000")
+        C_ARD_NUM_CE_ARRAY = (32)
+        C_FAMILY = "virtex6"
+    Summary:
+	no macro.
+Unit <axi_lite_ipif> synthesized.
+
+Synthesizing Unit <slave_attachment>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd".
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111","0000000000000000000000000000000000000000000000000000000000000000")
+        C_ARD_NUM_CE_ARRAY = (32)
+        C_IPIF_ABUS_WIDTH = 32
+        C_IPIF_DBUS_WIDTH = 32
+        C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
+        C_USE_WSTRB = 0
+        C_DPHASE_TIMEOUT = 8
+        C_FAMILY = "virtex6"
+WARNING:Xst:647 - Input <S_AXI_AWADDR<31:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_WSTRB> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_ARADDR<31:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" line 341: Output port <CS_for_gaps> of the instance <I_DECODER> is unconnected or connected to loadless signal.
+    Found 2-bit register for signal <state>.
+    Found 2-bit register for signal <s_axi_rresp_i>.
+    Found 32-bit register for signal <s_axi_rdata_i>.
+    Found 1-bit register for signal <s_axi_rvalid_i>.
+    Found 2-bit register for signal <s_axi_bresp_i>.
+    Found 1-bit register for signal <s_axi_bvalid_i>.
+    Found 4-bit register for signal <INCLUDE_DPHASE_TIMER.dpto_cnt>.
+    Found 1-bit register for signal <rst>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 4                                              |
+    | Clock              | S_AXI_ACLK (rising_edge)                       |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | sm_idle                                        |
+    | Power Up State     | sm_idle                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <INCLUDE_DPHASE_TIMER.dpto_cnt[3]_GND_12_o_add_31_OUT> created at line 507.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  43 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <slave_attachment> synthesized.
+
+Synthesizing Unit <address_decoder>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd".
+        C_BUS_AWIDTH = 9
+        C_S_AXI_MIN_SIZE = "00000000000000000000000111111111"
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111","0000000000000000000000000000000000000000000000000000000000000000")
+        C_ARD_NUM_CE_ARRAY = (32)
+        C_FAMILY = "nofamily"
+WARNING:Xst:647 - Input <Address_In_Erly<0:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus_RNW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <Bus_RNW_reg>.
+    Found 1-bit register for signal <ce_out_i<0>>.
+    Found 1-bit register for signal <ce_out_i<1>>.
+    Found 1-bit register for signal <ce_out_i<2>>.
+    Found 1-bit register for signal <ce_out_i<3>>.
+    Found 1-bit register for signal <ce_out_i<4>>.
+    Found 1-bit register for signal <ce_out_i<5>>.
+    Found 1-bit register for signal <ce_out_i<6>>.
+    Found 1-bit register for signal <ce_out_i<7>>.
+    Found 1-bit register for signal <ce_out_i<8>>.
+    Found 1-bit register for signal <ce_out_i<9>>.
+    Found 1-bit register for signal <ce_out_i<10>>.
+    Found 1-bit register for signal <ce_out_i<11>>.
+    Found 1-bit register for signal <ce_out_i<12>>.
+    Found 1-bit register for signal <ce_out_i<13>>.
+    Found 1-bit register for signal <ce_out_i<14>>.
+    Found 1-bit register for signal <ce_out_i<15>>.
+    Found 1-bit register for signal <ce_out_i<16>>.
+    Found 1-bit register for signal <ce_out_i<17>>.
+    Found 1-bit register for signal <ce_out_i<18>>.
+    Found 1-bit register for signal <ce_out_i<19>>.
+    Found 1-bit register for signal <ce_out_i<20>>.
+    Found 1-bit register for signal <ce_out_i<21>>.
+    Found 1-bit register for signal <ce_out_i<22>>.
+    Found 1-bit register for signal <ce_out_i<23>>.
+    Found 1-bit register for signal <ce_out_i<24>>.
+    Found 1-bit register for signal <ce_out_i<25>>.
+    Found 1-bit register for signal <ce_out_i<26>>.
+    Found 1-bit register for signal <ce_out_i<27>>.
+    Found 1-bit register for signal <ce_out_i<28>>.
+    Found 1-bit register for signal <ce_out_i<29>>.
+    Found 1-bit register for signal <ce_out_i<30>>.
+    Found 1-bit register for signal <ce_out_i<31>>.
+    Found 1-bit register for signal <cs_out_i>.
+    Summary:
+	inferred  34 D-type flip-flop(s).
+Unit <address_decoder> synthesized.
+
+Synthesizing Unit <pselect_f_1>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "00000"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_1> synthesized.
+
+Synthesizing Unit <pselect_f_2>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "00001"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_2> synthesized.
+
+Synthesizing Unit <pselect_f_3>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "00010"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_3> synthesized.
+
+Synthesizing Unit <pselect_f_4>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "00011"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_4> synthesized.
+
+Synthesizing Unit <pselect_f_5>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "00100"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_5> synthesized.
+
+Synthesizing Unit <pselect_f_6>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "00101"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_6> synthesized.
+
+Synthesizing Unit <pselect_f_7>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "00110"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_7> synthesized.
+
+Synthesizing Unit <pselect_f_8>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "00111"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_8> synthesized.
+
+Synthesizing Unit <pselect_f_9>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "01000"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_9> synthesized.
+
+Synthesizing Unit <pselect_f_10>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "01001"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_10> synthesized.
+
+Synthesizing Unit <pselect_f_11>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "01010"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_11> synthesized.
+
+Synthesizing Unit <pselect_f_12>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "01011"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_12> synthesized.
+
+Synthesizing Unit <pselect_f_13>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "01100"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_13> synthesized.
+
+Synthesizing Unit <pselect_f_14>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "01101"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_14> synthesized.
+
+Synthesizing Unit <pselect_f_15>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "01110"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_15> synthesized.
+
+Synthesizing Unit <pselect_f_16>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "01111"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_16> synthesized.
+
+Synthesizing Unit <pselect_f_17>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "10000"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_17> synthesized.
+
+Synthesizing Unit <pselect_f_18>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "10001"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_18> synthesized.
+
+Synthesizing Unit <pselect_f_19>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "10010"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_19> synthesized.
+
+Synthesizing Unit <pselect_f_20>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "10011"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_20> synthesized.
+
+Synthesizing Unit <pselect_f_21>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "10100"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_21> synthesized.
+
+Synthesizing Unit <pselect_f_22>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "10101"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_22> synthesized.
+
+Synthesizing Unit <pselect_f_23>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "10110"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_23> synthesized.
+
+Synthesizing Unit <pselect_f_24>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "10111"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_24> synthesized.
+
+Synthesizing Unit <pselect_f_25>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "11000"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_25> synthesized.
+
+Synthesizing Unit <pselect_f_26>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "11001"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_26> synthesized.
+
+Synthesizing Unit <pselect_f_27>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "11010"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_27> synthesized.
+
+Synthesizing Unit <pselect_f_28>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "11011"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_28> synthesized.
+
+Synthesizing Unit <pselect_f_29>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "11100"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_29> synthesized.
+
+Synthesizing Unit <pselect_f_30>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "11101"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_30> synthesized.
+
+Synthesizing Unit <pselect_f_31>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "11110"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_31> synthesized.
+
+Synthesizing Unit <pselect_f_32>.
+    Related source file is "C:/Xilinx/14.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 5
+        C_BAR = "11111"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_32> synthesized.
+
+Synthesizing Unit <user_logic>.
+    Related source file is "J:\Documents\Projects\Pipistrello_v2.0\MBduino\mb_system\pcores\wing_v1_00_a\hdl\verilog\user_logic.v".
+        WING_DWIDTH = 16
+        PWM_DWIDTH = 16
+        C_NUM_REG = 32
+        C_SLV_DWIDTH = 32
+    Found 16-bit register for signal <wing_in_d2>.
+    Found 16-bit register for signal <pwm_counter>.
+    Found 1-bit register for signal <port<15>>.
+    Found 1-bit register for signal <port<14>>.
+    Found 1-bit register for signal <port<13>>.
+    Found 1-bit register for signal <port<12>>.
+    Found 1-bit register for signal <port<11>>.
+    Found 1-bit register for signal <port<10>>.
+    Found 1-bit register for signal <port<9>>.
+    Found 1-bit register for signal <port<8>>.
+    Found 1-bit register for signal <port<7>>.
+    Found 1-bit register for signal <port<6>>.
+    Found 1-bit register for signal <port<5>>.
+    Found 1-bit register for signal <port<4>>.
+    Found 1-bit register for signal <port<3>>.
+    Found 1-bit register for signal <port<2>>.
+    Found 1-bit register for signal <port<1>>.
+    Found 1-bit register for signal <port<0>>.
+    Found 1-bit register for signal <dir<15>>.
+    Found 1-bit register for signal <dir<14>>.
+    Found 1-bit register for signal <dir<13>>.
+    Found 1-bit register for signal <dir<12>>.
+    Found 1-bit register for signal <dir<11>>.
+    Found 1-bit register for signal <dir<10>>.
+    Found 1-bit register for signal <dir<9>>.
+    Found 1-bit register for signal <dir<8>>.
+    Found 1-bit register for signal <dir<7>>.
+    Found 1-bit register for signal <dir<6>>.
+    Found 1-bit register for signal <dir<5>>.
+    Found 1-bit register for signal <dir<4>>.
+    Found 1-bit register for signal <dir<3>>.
+    Found 1-bit register for signal <dir<2>>.
+    Found 1-bit register for signal <dir<1>>.
+    Found 1-bit register for signal <dir<0>>.
+    Found 1-bit register for signal <pwm0<15>>.
+    Found 1-bit register for signal <pwm0<14>>.
+    Found 1-bit register for signal <pwm0<13>>.
+    Found 1-bit register for signal <pwm0<12>>.
+    Found 1-bit register for signal <pwm0<11>>.
+    Found 1-bit register for signal <pwm0<10>>.
+    Found 1-bit register for signal <pwm0<9>>.
+    Found 1-bit register for signal <pwm0<8>>.
+    Found 1-bit register for signal <pwm0<7>>.
+    Found 1-bit register for signal <pwm0<6>>.
+    Found 1-bit register for signal <pwm0<5>>.
+    Found 1-bit register for signal <pwm0<4>>.
+    Found 1-bit register for signal <pwm0<3>>.
+    Found 1-bit register for signal <pwm0<2>>.
+    Found 1-bit register for signal <pwm0<1>>.
+    Found 1-bit register for signal <pwm0<0>>.
+    Found 1-bit register for signal <pwm1<15>>.
+    Found 1-bit register for signal <pwm1<14>>.
+    Found 1-bit register for signal <pwm1<13>>.
+    Found 1-bit register for signal <pwm1<12>>.
+    Found 1-bit register for signal <pwm1<11>>.
+    Found 1-bit register for signal <pwm1<10>>.
+    Found 1-bit register for signal <pwm1<9>>.
+    Found 1-bit register for signal <pwm1<8>>.
+    Found 1-bit register for signal <pwm1<7>>.
+    Found 1-bit register for signal <pwm1<6>>.
+    Found 1-bit register for signal <pwm1<5>>.
+    Found 1-bit register for signal <pwm1<4>>.
+    Found 1-bit register for signal <pwm1<3>>.
+    Found 1-bit register for signal <pwm1<2>>.
+    Found 1-bit register for signal <pwm1<1>>.
+    Found 1-bit register for signal <pwm1<0>>.
+    Found 1-bit register for signal <pwm2<15>>.
+    Found 1-bit register for signal <pwm2<14>>.
+    Found 1-bit register for signal <pwm2<13>>.
+    Found 1-bit register for signal <pwm2<12>>.
+    Found 1-bit register for signal <pwm2<11>>.
+    Found 1-bit register for signal <pwm2<10>>.
+    Found 1-bit register for signal <pwm2<9>>.
+    Found 1-bit register for signal <pwm2<8>>.
+    Found 1-bit register for signal <pwm2<7>>.
+    Found 1-bit register for signal <pwm2<6>>.
+    Found 1-bit register for signal <pwm2<5>>.
+    Found 1-bit register for signal <pwm2<4>>.
+    Found 1-bit register for signal <pwm2<3>>.
+    Found 1-bit register for signal <pwm2<2>>.
+    Found 1-bit register for signal <pwm2<1>>.
+    Found 1-bit register for signal <pwm2<0>>.
+    Found 1-bit register for signal <pwm3<15>>.
+    Found 1-bit register for signal <pwm3<14>>.
+    Found 1-bit register for signal <pwm3<13>>.
+    Found 1-bit register for signal <pwm3<12>>.
+    Found 1-bit register for signal <pwm3<11>>.
+    Found 1-bit register for signal <pwm3<10>>.
+    Found 1-bit register for signal <pwm3<9>>.
+    Found 1-bit register for signal <pwm3<8>>.
+    Found 1-bit register for signal <pwm3<7>>.
+    Found 1-bit register for signal <pwm3<6>>.
+    Found 1-bit register for signal <pwm3<5>>.
+    Found 1-bit register for signal <pwm3<4>>.
+    Found 1-bit register for signal <pwm3<3>>.
+    Found 1-bit register for signal <pwm3<2>>.
+    Found 1-bit register for signal <pwm3<1>>.
+    Found 1-bit register for signal <pwm3<0>>.
+    Found 1-bit register for signal <pwm4<15>>.
+    Found 1-bit register for signal <pwm4<14>>.
+    Found 1-bit register for signal <pwm4<13>>.
+    Found 1-bit register for signal <pwm4<12>>.
+    Found 1-bit register for signal <pwm4<11>>.
+    Found 1-bit register for signal <pwm4<10>>.
+    Found 1-bit register for signal <pwm4<9>>.
+    Found 1-bit register for signal <pwm4<8>>.
+    Found 1-bit register for signal <pwm4<7>>.
+    Found 1-bit register for signal <pwm4<6>>.
+    Found 1-bit register for signal <pwm4<5>>.
+    Found 1-bit register for signal <pwm4<4>>.
+    Found 1-bit register for signal <pwm4<3>>.
+    Found 1-bit register for signal <pwm4<2>>.
+    Found 1-bit register for signal <pwm4<1>>.
+    Found 1-bit register for signal <pwm4<0>>.
+    Found 1-bit register for signal <pwm5<15>>.
+    Found 1-bit register for signal <pwm5<14>>.
+    Found 1-bit register for signal <pwm5<13>>.
+    Found 1-bit register for signal <pwm5<12>>.
+    Found 1-bit register for signal <pwm5<11>>.
+    Found 1-bit register for signal <pwm5<10>>.
+    Found 1-bit register for signal <pwm5<9>>.
+    Found 1-bit register for signal <pwm5<8>>.
+    Found 1-bit register for signal <pwm5<7>>.
+    Found 1-bit register for signal <pwm5<6>>.
+    Found 1-bit register for signal <pwm5<5>>.
+    Found 1-bit register for signal <pwm5<4>>.
+    Found 1-bit register for signal <pwm5<3>>.
+    Found 1-bit register for signal <pwm5<2>>.
+    Found 1-bit register for signal <pwm5<1>>.
+    Found 1-bit register for signal <pwm5<0>>.
+    Found 1-bit register for signal <pwm6<15>>.
+    Found 1-bit register for signal <pwm6<14>>.
+    Found 1-bit register for signal <pwm6<13>>.
+    Found 1-bit register for signal <pwm6<12>>.
+    Found 1-bit register for signal <pwm6<11>>.
+    Found 1-bit register for signal <pwm6<10>>.
+    Found 1-bit register for signal <pwm6<9>>.
+    Found 1-bit register for signal <pwm6<8>>.
+    Found 1-bit register for signal <pwm6<7>>.
+    Found 1-bit register for signal <pwm6<6>>.
+    Found 1-bit register for signal <pwm6<5>>.
+    Found 1-bit register for signal <pwm6<4>>.
+    Found 1-bit register for signal <pwm6<3>>.
+    Found 1-bit register for signal <pwm6<2>>.
+    Found 1-bit register for signal <pwm6<1>>.
+    Found 1-bit register for signal <pwm6<0>>.
+    Found 1-bit register for signal <pwm7<15>>.
+    Found 1-bit register for signal <pwm7<14>>.
+    Found 1-bit register for signal <pwm7<13>>.
+    Found 1-bit register for signal <pwm7<12>>.
+    Found 1-bit register for signal <pwm7<11>>.
+    Found 1-bit register for signal <pwm7<10>>.
+    Found 1-bit register for signal <pwm7<9>>.
+    Found 1-bit register for signal <pwm7<8>>.
+    Found 1-bit register for signal <pwm7<7>>.
+    Found 1-bit register for signal <pwm7<6>>.
+    Found 1-bit register for signal <pwm7<5>>.
+    Found 1-bit register for signal <pwm7<4>>.
+    Found 1-bit register for signal <pwm7<3>>.
+    Found 1-bit register for signal <pwm7<2>>.
+    Found 1-bit register for signal <pwm7<1>>.
+    Found 1-bit register for signal <pwm7<0>>.
+    Found 1-bit register for signal <pwm8<15>>.
+    Found 1-bit register for signal <pwm8<14>>.
+    Found 1-bit register for signal <pwm8<13>>.
+    Found 1-bit register for signal <pwm8<12>>.
+    Found 1-bit register for signal <pwm8<11>>.
+    Found 1-bit register for signal <pwm8<10>>.
+    Found 1-bit register for signal <pwm8<9>>.
+    Found 1-bit register for signal <pwm8<8>>.
+    Found 1-bit register for signal <pwm8<7>>.
+    Found 1-bit register for signal <pwm8<6>>.
+    Found 1-bit register for signal <pwm8<5>>.
+    Found 1-bit register for signal <pwm8<4>>.
+    Found 1-bit register for signal <pwm8<3>>.
+    Found 1-bit register for signal <pwm8<2>>.
+    Found 1-bit register for signal <pwm8<1>>.
+    Found 1-bit register for signal <pwm8<0>>.
+    Found 1-bit register for signal <pwm9<15>>.
+    Found 1-bit register for signal <pwm9<14>>.
+    Found 1-bit register for signal <pwm9<13>>.
+    Found 1-bit register for signal <pwm9<12>>.
+    Found 1-bit register for signal <pwm9<11>>.
+    Found 1-bit register for signal <pwm9<10>>.
+    Found 1-bit register for signal <pwm9<9>>.
+    Found 1-bit register for signal <pwm9<8>>.
+    Found 1-bit register for signal <pwm9<7>>.
+    Found 1-bit register for signal <pwm9<6>>.
+    Found 1-bit register for signal <pwm9<5>>.
+    Found 1-bit register for signal <pwm9<4>>.
+    Found 1-bit register for signal <pwm9<3>>.
+    Found 1-bit register for signal <pwm9<2>>.
+    Found 1-bit register for signal <pwm9<1>>.
+    Found 1-bit register for signal <pwm9<0>>.
+    Found 1-bit register for signal <pwm10<15>>.
+    Found 1-bit register for signal <pwm10<14>>.
+    Found 1-bit register for signal <pwm10<13>>.
+    Found 1-bit register for signal <pwm10<12>>.
+    Found 1-bit register for signal <pwm10<11>>.
+    Found 1-bit register for signal <pwm10<10>>.
+    Found 1-bit register for signal <pwm10<9>>.
+    Found 1-bit register for signal <pwm10<8>>.
+    Found 1-bit register for signal <pwm10<7>>.
+    Found 1-bit register for signal <pwm10<6>>.
+    Found 1-bit register for signal <pwm10<5>>.
+    Found 1-bit register for signal <pwm10<4>>.
+    Found 1-bit register for signal <pwm10<3>>.
+    Found 1-bit register for signal <pwm10<2>>.
+    Found 1-bit register for signal <pwm10<1>>.
+    Found 1-bit register for signal <pwm10<0>>.
+    Found 1-bit register for signal <pwm11<15>>.
+    Found 1-bit register for signal <pwm11<14>>.
+    Found 1-bit register for signal <pwm11<13>>.
+    Found 1-bit register for signal <pwm11<12>>.
+    Found 1-bit register for signal <pwm11<11>>.
+    Found 1-bit register for signal <pwm11<10>>.
+    Found 1-bit register for signal <pwm11<9>>.
+    Found 1-bit register for signal <pwm11<8>>.
+    Found 1-bit register for signal <pwm11<7>>.
+    Found 1-bit register for signal <pwm11<6>>.
+    Found 1-bit register for signal <pwm11<5>>.
+    Found 1-bit register for signal <pwm11<4>>.
+    Found 1-bit register for signal <pwm11<3>>.
+    Found 1-bit register for signal <pwm11<2>>.
+    Found 1-bit register for signal <pwm11<1>>.
+    Found 1-bit register for signal <pwm11<0>>.
+    Found 1-bit register for signal <pwm12<15>>.
+    Found 1-bit register for signal <pwm12<14>>.
+    Found 1-bit register for signal <pwm12<13>>.
+    Found 1-bit register for signal <pwm12<12>>.
+    Found 1-bit register for signal <pwm12<11>>.
+    Found 1-bit register for signal <pwm12<10>>.
+    Found 1-bit register for signal <pwm12<9>>.
+    Found 1-bit register for signal <pwm12<8>>.
+    Found 1-bit register for signal <pwm12<7>>.
+    Found 1-bit register for signal <pwm12<6>>.
+    Found 1-bit register for signal <pwm12<5>>.
+    Found 1-bit register for signal <pwm12<4>>.
+    Found 1-bit register for signal <pwm12<3>>.
+    Found 1-bit register for signal <pwm12<2>>.
+    Found 1-bit register for signal <pwm12<1>>.
+    Found 1-bit register for signal <pwm12<0>>.
+    Found 1-bit register for signal <pwm13<15>>.
+    Found 1-bit register for signal <pwm13<14>>.
+    Found 1-bit register for signal <pwm13<13>>.
+    Found 1-bit register for signal <pwm13<12>>.
+    Found 1-bit register for signal <pwm13<11>>.
+    Found 1-bit register for signal <pwm13<10>>.
+    Found 1-bit register for signal <pwm13<9>>.
+    Found 1-bit register for signal <pwm13<8>>.
+    Found 1-bit register for signal <pwm13<7>>.
+    Found 1-bit register for signal <pwm13<6>>.
+    Found 1-bit register for signal <pwm13<5>>.
+    Found 1-bit register for signal <pwm13<4>>.
+    Found 1-bit register for signal <pwm13<3>>.
+    Found 1-bit register for signal <pwm13<2>>.
+    Found 1-bit register for signal <pwm13<1>>.
+    Found 1-bit register for signal <pwm13<0>>.
+    Found 1-bit register for signal <pwm14<15>>.
+    Found 1-bit register for signal <pwm14<14>>.
+    Found 1-bit register for signal <pwm14<13>>.
+    Found 1-bit register for signal <pwm14<12>>.
+    Found 1-bit register for signal <pwm14<11>>.
+    Found 1-bit register for signal <pwm14<10>>.
+    Found 1-bit register for signal <pwm14<9>>.
+    Found 1-bit register for signal <pwm14<8>>.
+    Found 1-bit register for signal <pwm14<7>>.
+    Found 1-bit register for signal <pwm14<6>>.
+    Found 1-bit register for signal <pwm14<5>>.
+    Found 1-bit register for signal <pwm14<4>>.
+    Found 1-bit register for signal <pwm14<3>>.
+    Found 1-bit register for signal <pwm14<2>>.
+    Found 1-bit register for signal <pwm14<1>>.
+    Found 1-bit register for signal <pwm14<0>>.
+    Found 1-bit register for signal <pwm15<15>>.
+    Found 1-bit register for signal <pwm15<14>>.
+    Found 1-bit register for signal <pwm15<13>>.
+    Found 1-bit register for signal <pwm15<12>>.
+    Found 1-bit register for signal <pwm15<11>>.
+    Found 1-bit register for signal <pwm15<10>>.
+    Found 1-bit register for signal <pwm15<9>>.
+    Found 1-bit register for signal <pwm15<8>>.
+    Found 1-bit register for signal <pwm15<7>>.
+    Found 1-bit register for signal <pwm15<6>>.
+    Found 1-bit register for signal <pwm15<5>>.
+    Found 1-bit register for signal <pwm15<4>>.
+    Found 1-bit register for signal <pwm15<3>>.
+    Found 1-bit register for signal <pwm15<2>>.
+    Found 1-bit register for signal <pwm15<1>>.
+    Found 1-bit register for signal <pwm15<0>>.
+    Found 1-bit register for signal <pwm_en<15>>.
+    Found 1-bit register for signal <pwm_en<14>>.
+    Found 1-bit register for signal <pwm_en<13>>.
+    Found 1-bit register for signal <pwm_en<12>>.
+    Found 1-bit register for signal <pwm_en<11>>.
+    Found 1-bit register for signal <pwm_en<10>>.
+    Found 1-bit register for signal <pwm_en<9>>.
+    Found 1-bit register for signal <pwm_en<8>>.
+    Found 1-bit register for signal <pwm_en<7>>.
+    Found 1-bit register for signal <pwm_en<6>>.
+    Found 1-bit register for signal <pwm_en<5>>.
+    Found 1-bit register for signal <pwm_en<4>>.
+    Found 1-bit register for signal <pwm_en<3>>.
+    Found 1-bit register for signal <pwm_en<2>>.
+    Found 1-bit register for signal <pwm_en<1>>.
+    Found 1-bit register for signal <pwm_en<0>>.
+    Found 1-bit register for signal <int_sel<31>>.
+    Found 1-bit register for signal <int_sel<30>>.
+    Found 1-bit register for signal <int_sel<29>>.
+    Found 1-bit register for signal <int_sel<28>>.
+    Found 1-bit register for signal <int_sel<27>>.
+    Found 1-bit register for signal <int_sel<26>>.
+    Found 1-bit register for signal <int_sel<25>>.
+    Found 1-bit register for signal <int_sel<24>>.
+    Found 1-bit register for signal <int_sel<23>>.
+    Found 1-bit register for signal <int_sel<22>>.
+    Found 1-bit register for signal <int_sel<21>>.
+    Found 1-bit register for signal <int_sel<20>>.
+    Found 1-bit register for signal <int_sel<19>>.
+    Found 1-bit register for signal <int_sel<18>>.
+    Found 1-bit register for signal <int_sel<17>>.
+    Found 1-bit register for signal <int_sel<16>>.
+    Found 1-bit register for signal <int_sel<15>>.
+    Found 1-bit register for signal <int_sel<14>>.
+    Found 1-bit register for signal <int_sel<13>>.
+    Found 1-bit register for signal <int_sel<12>>.
+    Found 1-bit register for signal <int_sel<11>>.
+    Found 1-bit register for signal <int_sel<10>>.
+    Found 1-bit register for signal <int_sel<9>>.
+    Found 1-bit register for signal <int_sel<8>>.
+    Found 1-bit register for signal <int_sel<7>>.
+    Found 1-bit register for signal <int_sel<6>>.
+    Found 1-bit register for signal <int_sel<5>>.
+    Found 1-bit register for signal <int_sel<4>>.
+    Found 1-bit register for signal <int_sel<3>>.
+    Found 1-bit register for signal <int_sel<2>>.
+    Found 1-bit register for signal <int_sel<1>>.
+    Found 1-bit register for signal <int_sel<0>>.
+    Found 16-bit register for signal <int_flag>.
+    Found 1-bit register for signal <led_map<15>>.
+    Found 1-bit register for signal <led_map<14>>.
+    Found 1-bit register for signal <led_map<13>>.
+    Found 1-bit register for signal <led_map<12>>.
+    Found 1-bit register for signal <led_map<11>>.
+    Found 1-bit register for signal <led_map<10>>.
+    Found 1-bit register for signal <led_map<9>>.
+    Found 1-bit register for signal <led_map<8>>.
+    Found 1-bit register for signal <led_map<7>>.
+    Found 1-bit register for signal <led_map<6>>.
+    Found 1-bit register for signal <led_map<5>>.
+    Found 1-bit register for signal <led_map<4>>.
+    Found 1-bit register for signal <led_map<3>>.
+    Found 1-bit register for signal <led_map<2>>.
+    Found 1-bit register for signal <led_map<1>>.
+    Found 1-bit register for signal <led_map<0>>.
+    Found 1-bit register for signal <slv_reg30<31>>.
+    Found 1-bit register for signal <slv_reg30<30>>.
+    Found 1-bit register for signal <slv_reg30<29>>.
+    Found 1-bit register for signal <slv_reg30<28>>.
+    Found 1-bit register for signal <slv_reg30<27>>.
+    Found 1-bit register for signal <slv_reg30<26>>.
+    Found 1-bit register for signal <slv_reg30<25>>.
+    Found 1-bit register for signal <slv_reg30<24>>.
+    Found 1-bit register for signal <slv_reg30<23>>.
+    Found 1-bit register for signal <slv_reg30<22>>.
+    Found 1-bit register for signal <slv_reg30<21>>.
+    Found 1-bit register for signal <slv_reg30<20>>.
+    Found 1-bit register for signal <slv_reg30<19>>.
+    Found 1-bit register for signal <slv_reg30<18>>.
+    Found 1-bit register for signal <slv_reg30<17>>.
+    Found 1-bit register for signal <slv_reg30<16>>.
+    Found 1-bit register for signal <slv_reg30<15>>.
+    Found 1-bit register for signal <slv_reg30<14>>.
+    Found 1-bit register for signal <slv_reg30<13>>.
+    Found 1-bit register for signal <slv_reg30<12>>.
+    Found 1-bit register for signal <slv_reg30<11>>.
+    Found 1-bit register for signal <slv_reg30<10>>.
+    Found 1-bit register for signal <slv_reg30<9>>.
+    Found 1-bit register for signal <slv_reg30<8>>.
+    Found 1-bit register for signal <slv_reg30<7>>.
+    Found 1-bit register for signal <slv_reg30<6>>.
+    Found 1-bit register for signal <slv_reg30<5>>.
+    Found 1-bit register for signal <slv_reg30<4>>.
+    Found 1-bit register for signal <slv_reg30<3>>.
+    Found 1-bit register for signal <slv_reg30<2>>.
+    Found 1-bit register for signal <slv_reg30<1>>.
+    Found 1-bit register for signal <slv_reg30<0>>.
+    Found 1-bit register for signal <slv_reg31<31>>.
+    Found 1-bit register for signal <slv_reg31<30>>.
+    Found 1-bit register for signal <slv_reg31<29>>.
+    Found 1-bit register for signal <slv_reg31<28>>.
+    Found 1-bit register for signal <slv_reg31<27>>.
+    Found 1-bit register for signal <slv_reg31<26>>.
+    Found 1-bit register for signal <slv_reg31<25>>.
+    Found 1-bit register for signal <slv_reg31<24>>.
+    Found 1-bit register for signal <slv_reg31<23>>.
+    Found 1-bit register for signal <slv_reg31<22>>.
+    Found 1-bit register for signal <slv_reg31<21>>.
+    Found 1-bit register for signal <slv_reg31<20>>.
+    Found 1-bit register for signal <slv_reg31<19>>.
+    Found 1-bit register for signal <slv_reg31<18>>.
+    Found 1-bit register for signal <slv_reg31<17>>.
+    Found 1-bit register for signal <slv_reg31<16>>.
+    Found 1-bit register for signal <slv_reg31<15>>.
+    Found 1-bit register for signal <slv_reg31<14>>.
+    Found 1-bit register for signal <slv_reg31<13>>.
+    Found 1-bit register for signal <slv_reg31<12>>.
+    Found 1-bit register for signal <slv_reg31<11>>.
+    Found 1-bit register for signal <slv_reg31<10>>.
+    Found 1-bit register for signal <slv_reg31<9>>.
+    Found 1-bit register for signal <slv_reg31<8>>.
+    Found 1-bit register for signal <slv_reg31<7>>.
+    Found 1-bit register for signal <slv_reg31<6>>.
+    Found 1-bit register for signal <slv_reg31<5>>.
+    Found 1-bit register for signal <slv_reg31<4>>.
+    Found 1-bit register for signal <slv_reg31<3>>.
+    Found 1-bit register for signal <slv_reg31<2>>.
+    Found 1-bit register for signal <slv_reg31<1>>.
+    Found 1-bit register for signal <slv_reg31<0>>.
+    Found 16-bit register for signal <wing_in_d>.
+    Found 16-bit adder for signal <pwm_counter[15]_GND_47_o_add_103_OUT> created at line 212.
+    Found 1-bit 16-to-1 multiplexer for signal <wing_led1> created at line 241.
+    Found 1-bit 16-to-1 multiplexer for signal <wing_led2> created at line 242.
+    Found 1-bit 16-to-1 multiplexer for signal <wing_led3> created at line 243.
+    Found 1-bit 16-to-1 multiplexer for signal <wing_led4> created at line 244.
+    Found 16-bit comparator greater for signal <pwm_counter[15]_pwm0[15]_LessThan_107_o> created at line 214
+    Found 16-bit comparator greater for signal <pwm_counter[15]_pwm1[15]_LessThan_108_o> created at line 215
+    Found 16-bit comparator greater for signal <pwm_counter[15]_pwm2[15]_LessThan_109_o> created at line 216
+    Found 16-bit comparator greater for signal <pwm_counter[15]_pwm3[15]_LessThan_110_o> created at line 217
+    Found 16-bit comparator greater for signal <pwm_counter[15]_pwm4[15]_LessThan_111_o> created at line 218
+    Found 16-bit comparator greater for signal <pwm_counter[15]_pwm5[15]_LessThan_112_o> created at line 219
+    Found 16-bit comparator greater for signal <pwm_counter[15]_pwm6[15]_LessThan_113_o> created at line 220
+    Found 16-bit comparator greater for signal <pwm_counter[15]_pwm7[15]_LessThan_114_o> created at line 221
+    Found 16-bit comparator greater for signal <pwm_counter[15]_pwm8[15]_LessThan_115_o> created at line 222
+    Found 16-bit comparator greater for signal <pwm_counter[15]_pwm9[15]_LessThan_116_o> created at line 223
+    Found 16-bit comparator greater for signal <pwm_counter[15]_pwm10[15]_LessThan_117_o> created at line 224
+    Found 16-bit comparator greater for signal <pwm_counter[15]_pwm11[15]_LessThan_118_o> created at line 225
+    Found 16-bit comparator greater for signal <pwm_counter[15]_pwm12[15]_LessThan_119_o> created at line 226
+    Found 16-bit comparator greater for signal <pwm_counter[15]_pwm13[15]_LessThan_120_o> created at line 227
+    Found 16-bit comparator greater for signal <pwm_counter[15]_pwm14[15]_LessThan_121_o> created at line 228
+    Found 16-bit comparator greater for signal <pwm_counter[15]_pwm15[15]_LessThan_122_o> created at line 229
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 480 D-type flip-flop(s).
+	inferred  16 Comparator(s).
+	inferred 714 Multiplexer(s).
+Unit <user_logic> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 16-bit adder                                          : 1
+ 4-bit adder                                           : 1
+# Registers                                            : 83
+ 1-bit register                                        : 53
+ 16-bit register                                       : 23
+ 2-bit register                                        : 2
+ 32-bit register                                       : 4
+ 4-bit register                                        : 1
+# Comparators                                          : 16
+ 16-bit comparator greater                             : 16
+# Multiplexers                                         : 748
+ 1-bit 16-to-1 multiplexer                             : 4
+ 1-bit 2-to-1 multiplexer                              : 721
+ 16-bit 2-to-1 multiplexer                             : 18
+ 32-bit 2-to-1 multiplexer                             : 5
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <s_axi_bresp_i_0> has a constant value of 0 in block <I_SLAVE_ATTACHMENT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <s_axi_bresp_i_1> has a constant value of 0 in block <I_SLAVE_ATTACHMENT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <s_axi_rresp_i_0> has a constant value of 0 in block <I_SLAVE_ATTACHMENT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <s_axi_rresp_i_1> has a constant value of 0 in block <I_SLAVE_ATTACHMENT>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <slave_attachment>.
+The following registers are absorbed into counter <INCLUDE_DPHASE_TIMER.dpto_cnt>: 1 register on signal <INCLUDE_DPHASE_TIMER.dpto_cnt>.
+Unit <slave_attachment> synthesized (advanced).
+
+Synthesizing (advanced) Unit <user_logic>.
+The following registers are absorbed into counter <pwm_counter>: 1 register on signal <pwm_counter>.
+Unit <user_logic> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 16-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 537
+ Flip-Flops                                            : 537
+# Comparators                                          : 16
+ 16-bit comparator greater                             : 16
+# Multiplexers                                         : 716
+ 1-bit 16-to-1 multiplexer                             : 4
+ 1-bit 2-to-1 multiplexer                              : 689
+ 16-bit 2-to-1 multiplexer                             : 18
+ 32-bit 2-to-1 multiplexer                             : 5
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <s_axi_rresp_i_0> has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <s_axi_bresp_i_0> has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/FSM_0> on signal <state[1:2]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ sm_idle  | 00
+ sm_read  | 01
+ sm_write | 10
+ sm_resp  | 11
+----------------------
+
+Optimizing unit <wing> ...
+
+Optimizing unit <user_logic> ...
+
+Optimizing unit <slave_attachment> ...
+
+Optimizing unit <address_decoder> ...
+WARNING:Xst:1293 - FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_1> has a constant value of 0 in block <wing>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_1> has a constant value of 0 in block <wing>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0> of sequential type is unconnected in block <wing>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block wing, actual ratio is 6.
+FlipFlop AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg has been replicated 6 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg connected to a primary input has been replicated
+FlipFlop AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0 has been replicated 1 time(s)
+FlipFlop AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_10 has been replicated 1 time(s)
+FlipFlop AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_14 has been replicated 1 time(s)
+FlipFlop AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_15 has been replicated 1 time(s)
+FlipFlop AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_16 has been replicated 1 time(s)
+FlipFlop AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_17 has been replicated 1 time(s)
+FlipFlop AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_18 has been replicated 2 time(s)
+FlipFlop AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_22 has been replicated 2 time(s)
+FlipFlop AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_23 has been replicated 2 time(s)
+FlipFlop AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_24 has been replicated 1 time(s)
+FlipFlop AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_29 has been replicated 1 time(s)
+FlipFlop AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_31 has been replicated 1 time(s)
+FlipFlop AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_4 has been replicated 1 time(s)
+FlipFlop AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_7 has been replicated 1 time(s)
+FlipFlop AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_8 has been replicated 1 time(s)
+FlipFlop AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_9 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 579
+ Flip-Flops                                            : 579
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : wing.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1536
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 15
+#      LUT2                        : 97
+#      LUT3                        : 404
+#      LUT4                        : 297
+#      LUT5                        : 115
+#      LUT6                        : 426
+#      MUXCY                       : 127
+#      MUXF7                       : 29
+#      MUXF8                       : 4
+#      VCC                         : 1
+#      XORCY                       : 16
+# FlipFlops/Latches                : 579
+#      FD                          : 32
+#      FDE                         : 7
+#      FDR                         : 445
+#      FDRE                        : 83
+#      FDS                         : 12
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 142
+#      IBUF                        : 64
+#      OBUF                        : 78
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             579  out of  54576     1%  
+ Number of Slice LUTs:                 1358  out of  27288     4%  
+    Number used as Logic:              1358  out of  27288     4%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1406
+   Number with an unused Flip Flop:     827  out of   1406    58%  
+   Number with an unused LUT:            48  out of   1406     3%  
+   Number of fully used LUT-FF pairs:   531  out of   1406    37%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                         201
+ Number of bonded IOBs:                 143  out of    218    65%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+S_AXI_ACLK                         | BUFGP                  | 579   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 8.781ns (Maximum Frequency: 113.887MHz)
+   Minimum input arrival time before clock: 4.890ns
+   Maximum output required time after clock: 9.779ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
+  Clock period: 8.781ns (frequency: 113.887MHz)
+  Total number of paths / destination ports: 173313 / 736
+-------------------------------------------------------------------------
+Delay:               8.781ns (Levels of Logic = 8)
+  Source:            AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_12 (FF)
+  Destination:       USER_LOGIC_I/dir_15 (FF)
+  Source Clock:      S_AXI_ACLK rising
+  Destination Clock: S_AXI_ACLK rising
+
+  Data Path: AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_12 to USER_LOGIC_I/dir_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            10   0.447   1.085  AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_12 (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_12)
+     LUT6:I3->O           13   0.205   0.933  USER_LOGIC_I/slv_reg_write_sel[31]_GND_47_o_equal_384_o<31>121 (USER_LOGIC_I/slv_reg_write_sel[31]_GND_47_o_equal_384_o<31>12)
+     LUT6:I5->O           11   0.205   0.883  USER_LOGIC_I/slv_reg_write_sel[31]_GND_47_o_equal_384_o<31>151_1 (USER_LOGIC_I/slv_reg_write_sel[31]_GND_47_o_equal_384_o<31>151)
+     LUT6:I5->O           19   0.205   1.300  USER_LOGIC_I/slv_reg_write_sel[31]_GND_47_o_equal_381_o<31>2 (USER_LOGIC_I/slv_reg_write_sel[31]_GND_47_o_equal_381_o)
+     LUT6:I3->O            3   0.205   0.879  USER_LOGIC_I/out12 (USER_LOGIC_I/out11)
+     LUT6:I3->O            1   0.205   0.000  USER_LOGIC_I/slv_reg_write_sel[31]_dir[15]_select_389_OUT<10>111_SW0_SW0_F (N349)
+     MUXF7:I0->O           1   0.131   0.580  USER_LOGIC_I/slv_reg_write_sel[31]_dir[15]_select_389_OUT<10>111_SW0_SW0 (N262)
+     LUT6:I5->O           16   0.205   1.005  USER_LOGIC_I/slv_reg_write_sel[31]_dir[15]_select_389_OUT<10>111 (USER_LOGIC_I/slv_reg_write_sel[31]_dir[15]_select_389_OUT<0>31)
+     LUT6:I5->O            1   0.205   0.000  USER_LOGIC_I/slv_reg_write_sel[31]_dir[15]_select_389_OUT<9>1 (USER_LOGIC_I/slv_reg_write_sel[31]_dir[15]_select_389_OUT<6>)
+     FDR:D                     0.102          USER_LOGIC_I/dir_6
+    ----------------------------------------
+    Total                      8.781ns (2.115ns logic, 6.666ns route)
+                                       (24.1% logic, 75.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
+  Total number of paths / destination ports: 2057 / 1068
+-------------------------------------------------------------------------
+Offset:              4.890ns (Levels of Logic = 3)
+  Source:            S_AXI_ARVALID (PAD)
+  Destination:       AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_28 (FF)
+  Destination Clock: S_AXI_ACLK rising
+
+  Data Path: S_AXI_ARVALID to AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_28
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            15   1.222   0.982  S_AXI_ARVALID_IBUF (S_AXI_ARVALID_IBUF)
+     LUT5:I4->O           90   0.205   2.176  AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/Mmux_start11 (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/start)
+     LUT6:I0->O            1   0.203   0.000  AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].PER_CE_GEN[25].MULTIPLE_CES_THIS_CS_GEN.CE_I/Mmux_CS11 (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_expnd_i<25>)
+     FDRE:D                    0.102          AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_25
+    ----------------------------------------
+    Total                      4.890ns (1.732ns logic, 3.158ns route)
+                                       (35.4% logic, 64.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'S_AXI_ACLK'
+  Total number of paths / destination ports: 1344 / 74
+-------------------------------------------------------------------------
+Offset:              9.779ns (Levels of Logic = 5)
+  Source:            AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg (FF)
+  Destination:       S_AXI_ARREADY (PAD)
+  Source Clock:      S_AXI_ACLK rising
+
+  Data Path: AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg to S_AXI_ARREADY
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q            187   0.447   2.406  AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg)
+     LUT6:I0->O            1   0.203   0.684  USER_LOGIC_I/slv_read_ack<0>2_F (N351)
+     LUT3:I1->O            1   0.203   0.827  USER_LOGIC_I/slv_read_ack<0>21 (USER_LOGIC_I/slv_read_ack<0>1)
+     LUT6:I2->O           36   0.203   1.453  USER_LOGIC_I/slv_read_ack<0>7 (user_IP2Bus_RdAck)
+     LUT2:I0->O            1   0.203   0.579  AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rd_done1 (S_AXI_ARREADY_OBUF)
+     OBUF:I->O                 2.571          S_AXI_ARREADY_OBUF (S_AXI_ARREADY)
+    ----------------------------------------
+    Total                      9.779ns (3.830ns logic, 5.949ns route)
+                                       (39.2% logic, 60.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock S_AXI_ACLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+S_AXI_ACLK     |    8.781|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 16.13 secs
+ 
+--> 
+
+Total memory usage is 288776 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   19 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

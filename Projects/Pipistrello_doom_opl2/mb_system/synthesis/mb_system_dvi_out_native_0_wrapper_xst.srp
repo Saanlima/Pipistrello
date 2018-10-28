@@ -1,0 +1,685 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to J:\Documents\Projects\Pipistrello_v2.0\Pipistrello_dvi565\mb_system\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "mb_system_dvi_out_native_0_wrapper_xst.prj"
+Verilog Include Directory          : {"J:\Documents\Projects\Pipistrello_v2.0\Pipistrello_dvi565\mb_system\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc6slx45csg324-3
+Output File Name                   : "../implementation/mb_system_dvi_out_native_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : mb_system_dvi_out_native_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "J:/Documents/Projects/Pipistrello_v2.0/Pipistrello_dvi565/mb_system/pcores/dvi_out_native_v1_00_a/hdl/verilog/timing.v" into library dvi_out_native_v1_00_a
+Parsing module <timing>.
+Analyzing Verilog file "J:/Documents/Projects/Pipistrello_v2.0/Pipistrello_dvi565/mb_system/pcores/dvi_out_native_v1_00_a/hdl/verilog/hdclrbar.v" into library dvi_out_native_v1_00_a
+Parsing module <hdcolorbar>.
+Analyzing Verilog file "J:/Documents/Projects/Pipistrello_v2.0/Pipistrello_dvi565/mb_system/pcores/dvi_out_native_v1_00_a/hdl/verilog/convert_30to15_fifo.v" into library dvi_out_native_v1_00_a
+Parsing module <convert_30to15_fifo>.
+Analyzing Verilog file "J:/Documents/Projects/Pipistrello_v2.0/Pipistrello_dvi565/mb_system/pcores/dvi_out_native_v1_00_a/hdl/verilog/dvi_encoder.v" into library dvi_out_native_v1_00_a
+Parsing module <dvi_encoder>.
+Analyzing Verilog file "J:/Documents/Projects/Pipistrello_v2.0/Pipistrello_dvi565/mb_system/pcores/dvi_out_native_v1_00_a/hdl/verilog/encode.v" into library dvi_out_native_v1_00_a
+Parsing module <encode>.
+Analyzing Verilog file "J:/Documents/Projects/Pipistrello_v2.0/Pipistrello_dvi565/mb_system/pcores/dvi_out_native_v1_00_a/hdl/verilog/dvi_out_native.v" into library dvi_out_native_v1_00_a
+Parsing module <dvi_out_native>.
+Analyzing Verilog file "J:/Documents/Projects/Pipistrello_v2.0/Pipistrello_dvi565/mb_system/pcores/dvi_out_native_v1_00_a/hdl/verilog/DRAM16XN.v" into library dvi_out_native_v1_00_a
+Parsing module <DRAM16XN>.
+Analyzing Verilog file "J:/Documents/Projects/Pipistrello_v2.0/Pipistrello_dvi565/mb_system/pcores/dvi_out_native_v1_00_a/hdl/verilog/serdes_n_to_1.v" into library dvi_out_native_v1_00_a
+Parsing module <serdes_n_to_1>.
+Analyzing Verilog file "J:\Documents\Projects\Pipistrello_v2.0\Pipistrello_dvi565\mb_system\hdl\mb_system_dvi_out_native_0_wrapper.v" into library work
+Parsing module <mb_system_dvi_out_native_0_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <mb_system_dvi_out_native_0_wrapper>.
+
+Elaborating module <dvi_out_native>.
+
+Elaborating module <dvi_encoder>.
+
+Elaborating module <encode>.
+
+Elaborating module <convert_30to15_fifo>.
+
+Elaborating module <FDC>.
+
+Elaborating module <DRAM16XN(data_width=30)>.
+
+Elaborating module <RAM16X1D>.
+
+Elaborating module <FDP>.
+
+Elaborating module <FD>.
+
+Elaborating module <FDR>.
+
+Elaborating module <FDRE>.
+
+Elaborating module <FDE>.
+
+Elaborating module <BUFPLL(DIVIDE=5)>.
+
+Elaborating module <serdes_n_to_1(SF=5)>.
+
+Elaborating module <OSERDES2(DATA_WIDTH=5,DATA_RATE_OQ="SDR",DATA_RATE_OT="SDR",SERDES_MODE="MASTER",OUTPUT_MODE="DIFFERENTIAL")>.
+
+Elaborating module <OSERDES2(DATA_WIDTH=5,DATA_RATE_OQ="SDR",DATA_RATE_OT="SDR",SERDES_MODE="SLAVE",OUTPUT_MODE="DIFFERENTIAL")>.
+
+Elaborating module <OBUFDS>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <mb_system_dvi_out_native_0_wrapper>.
+    Related source file is "J:\Documents\Projects\Pipistrello_v2.0\Pipistrello_dvi565\mb_system\hdl\mb_system_dvi_out_native_0_wrapper.v".
+    Summary:
+	no macro.
+Unit <mb_system_dvi_out_native_0_wrapper> synthesized.
+
+Synthesizing Unit <dvi_out_native>.
+    Related source file is "J:/Documents/Projects/Pipistrello_v2.0/Pipistrello_dvi565/mb_system/pcores/dvi_out_native_v1_00_a/hdl/verilog/dvi_out_native.v".
+    Found 5-bit register for signal <tmdsclkint>.
+    Found 1-bit register for signal <toggle>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <dvi_out_native> synthesized.
+
+Synthesizing Unit <dvi_encoder>.
+    Related source file is "J:/Documents/Projects/Pipistrello_v2.0/Pipistrello_dvi565/mb_system/pcores/dvi_out_native_v1_00_a/hdl/verilog/dvi_encoder.v".
+    Summary:
+	no macro.
+Unit <dvi_encoder> synthesized.
+
+Synthesizing Unit <encode>.
+    Related source file is "J:/Documents/Projects/Pipistrello_v2.0/Pipistrello_dvi565/mb_system/pcores/dvi_out_native_v1_00_a/hdl/verilog/encode.v".
+        CTRLTOKEN0 = 10'b1101010100
+        CTRLTOKEN1 = 10'b0010101011
+        CTRLTOKEN2 = 10'b0101010100
+        CTRLTOKEN3 = 10'b1010101011
+    Found 10-bit register for signal <dout>.
+    Found 5-bit register for signal <cnt>.
+    Found 8-bit register for signal <din_q>.
+    Found 4-bit register for signal <n1q_m>.
+    Found 4-bit register for signal <n0q_m>.
+    Found 1-bit register for signal <de_q>.
+    Found 1-bit register for signal <de_reg>.
+    Found 1-bit register for signal <c0_q>.
+    Found 1-bit register for signal <c0_reg>.
+    Found 1-bit register for signal <c1_q>.
+    Found 1-bit register for signal <c1_reg>.
+    Found 9-bit register for signal <q_m_reg>.
+    Found 4-bit register for signal <n1d>.
+    Found 4-bit subtractor for signal <PWR_4_o_BUS_0017_sub_29_OUT> created at line 110.
+    Found 5-bit subtractor for signal <n0233> created at line 169.
+    Found 5-bit subtractor for signal <n0235> created at line 175.
+    Found 5-bit subtractor for signal <n0236> created at line 175.
+    Found 2-bit adder for signal <n0183[1:0]> created at line 66.
+    Found 3-bit adder for signal <n0186[2:0]> created at line 66.
+    Found 2-bit adder for signal <n0204[1:0]> created at line 109.
+    Found 3-bit adder for signal <n0207[2:0]> created at line 109.
+    Found 5-bit adder for signal <n0232> created at line 169.
+    Found 5-bit adder for signal <cnt[4]_GND_4_o_add_47_OUT> created at line 169.
+    Found 5-bit adder for signal <cnt[4]_GND_4_o_add_50_OUT> created at line 175.
+    Found 4-bit adder for signal <_n0248> created at line 66.
+    Found 4-bit adder for signal <_n0249> created at line 66.
+    Found 4-bit adder for signal <_n0250> created at line 66.
+    Found 4-bit adder for signal <_n0251> created at line 66.
+    Found 4-bit adder for signal <BUS_0003_GND_4_o_add_7_OUT> created at line 66.
+    Found 4-bit adder for signal <_n0253> created at line 109.
+    Found 4-bit adder for signal <_n0254> created at line 109.
+    Found 4-bit adder for signal <_n0255> created at line 109.
+    Found 4-bit adder for signal <_n0256> created at line 109.
+    Found 4-bit adder for signal <BUS_0010_GND_4_o_add_20_OUT> created at line 109.
+    Found 5-bit adder for signal <cnt[4]_GND_4_o_sub_43_OUT> created at line 162.
+    Found 5-bit adder for signal <cnt[4]_GND_4_o_sub_41_OUT> created at line 162.
+    Found 4x10-bit Read Only RAM for signal <c1_reg_PWR_4_o_wide_mux_53_OUT>
+    Found 4-bit comparator greater for signal <GND_4_o_n1d[3]_LessThan_11_o> created at line 77
+    Found 4-bit comparator equal for signal <n1q_m[3]_n0q_m[3]_equal_33_o> created at line 121
+    Found 4-bit comparator greater for signal <n0q_m[3]_n1q_m[3]_LessThan_34_o> created at line 125
+    Found 4-bit comparator greater for signal <n1q_m[3]_n0q_m[3]_LessThan_35_o> created at line 125
+    Summary:
+	inferred   1 RAM(s).
+	inferred  23 Adder/Subtractor(s).
+	inferred  50 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred  37 Multiplexer(s).
+Unit <encode> synthesized.
+
+Synthesizing Unit <convert_30to15_fifo>.
+    Related source file is "J:/Documents/Projects/Pipistrello_v2.0/Pipistrello_dvi565/mb_system/pcores/dvi_out_native_v1_00_a/hdl/verilog/convert_30to15_fifo.v".
+        ADDR0 = 4'b0000
+        ADDR1 = 4'b0001
+        ADDR2 = 4'b0010
+        ADDR3 = 4'b0011
+        ADDR4 = 4'b0100
+        ADDR5 = 4'b0101
+        ADDR6 = 4'b0110
+        ADDR7 = 4'b0111
+        ADDR8 = 4'b1000
+        ADDR9 = 4'b1001
+        ADDR10 = 4'b1010
+        ADDR11 = 4'b1011
+        ADDR12 = 4'b1100
+        ADDR13 = 4'b1101
+        ADDR14 = 4'b1110
+        ADDR15 = 4'b1111
+    Set property "ASYNC_REG = TRUE" for instance <fdp_rst>.
+INFO:Xst:3210 - "J:/Documents/Projects/Pipistrello_v2.0/Pipistrello_dvi565/mb_system/pcores/dvi_out_native_v1_00_a/hdl/verilog/convert_30to15_fifo.v" line 64: Output port <O_DATA_OUT> of the instance <fifo_u> is unconnected or connected to loadless signal.
+    Found 16x4-bit Read Only RAM for signal <wa_d>
+    Found 16x4-bit Read Only RAM for signal <ra_d>
+    Summary:
+	inferred   2 RAM(s).
+	inferred   1 Multiplexer(s).
+Unit <convert_30to15_fifo> synthesized.
+
+Synthesizing Unit <DRAM16XN>.
+    Related source file is "J:/Documents/Projects/Pipistrello_v2.0/Pipistrello_dvi565/mb_system/pcores/dvi_out_native_v1_00_a/hdl/verilog/DRAM16XN.v".
+        data_width = 30
+    Summary:
+	no macro.
+Unit <DRAM16XN> synthesized.
+
+Synthesizing Unit <serdes_n_to_1>.
+    Related source file is "J:/Documents/Projects/Pipistrello_v2.0/Pipistrello_dvi565/mb_system/pcores/dvi_out_native_v1_00_a/hdl/verilog/serdes_n_to_1.v".
+        SF = 5
+    Summary:
+	no macro.
+Unit <serdes_n_to_1> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 16x4-bit single-port Read Only RAM                    : 2
+ 4x10-bit single-port Read Only RAM                    : 3
+# Adders/Subtractors                                   : 69
+ 2-bit adder                                           : 6
+ 3-bit adder                                           : 6
+ 4-bit adder                                           : 30
+ 4-bit subtractor                                      : 3
+ 5-bit adder                                           : 15
+ 5-bit subtractor                                      : 9
+# Registers                                            : 38
+ 1-bit register                                        : 13
+ 10-bit register                                       : 3
+ 2-bit register                                        : 3
+ 4-bit register                                        : 9
+ 5-bit register                                        : 4
+ 8-bit register                                        : 3
+ 9-bit register                                        : 3
+# Comparators                                          : 12
+ 4-bit comparator equal                                : 3
+ 4-bit comparator greater                              : 9
+# Multiplexers                                         : 112
+ 1-bit 2-to-1 multiplexer                              : 96
+ 10-bit 2-to-1 multiplexer                             : 3
+ 15-bit 2-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 12
+# Xors                                                 : 42
+ 1-bit xor2                                            : 42
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <convert_30to15_fifo>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_wa_d> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 4-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <wa>            |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <wa_d>          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ra_d> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 4-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <ra>            |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <ra_d>          |          |
+    -----------------------------------------------------------------------
+Unit <convert_30to15_fifo> synthesized (advanced).
+
+Synthesizing (advanced) Unit <encode>.
+	The following adders/subtractors are grouped into adder tree <Madd_BUS_0010_GND_4_o_add_20_OUT_Madd1> :
+ 	<Madd__n0253> in block <encode>, 	<Madd__n0254> in block <encode>, 	<Madd__n0256_Madd> in block <encode>, 	<Madd_n0204[1:0]> in block <encode>, 	<Madd_BUS_0010_GND_4_o_add_20_OUT_Madd> in block <encode>.
+	The following adders/subtractors are grouped into adder tree <Madd_BUS_0003_GND_4_o_add_7_OUT_Madd1> :
+ 	<Madd__n0248> in block <encode>, 	<Madd__n0249> in block <encode>, 	<Madd__n0251_Madd> in block <encode>, 	<Madd_n0183[1:0]> in block <encode>, 	<Madd_BUS_0003_GND_4_o_add_7_OUT_Madd> in block <encode>.
+INFO:Xst:3231 - The small RAM <Mram_c1_reg_PWR_4_o_wide_mux_53_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 10-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(c1_reg,c0_reg)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3217 - HDL ADVISOR - Register <dout> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_c1_reg_PWR_4_o_wide_mux_53_OUT> for implementation on block RAM resources if you made this reset synchronous instead.
+Unit <encode> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 16x4-bit single-port distributed Read Only RAM        : 2
+ 4x10-bit single-port distributed Read Only RAM        : 3
+# Adders/Subtractors                                   : 27
+ 4-bit subtractor                                      : 3
+ 5-bit adder                                           : 15
+ 5-bit subtractor                                      : 9
+# Adder Trees                                          : 6
+ 4-bit / 6-inputs adder tree                           : 6
+# Registers                                            : 213
+ Flip-Flops                                            : 213
+# Comparators                                          : 12
+ 4-bit comparator equal                                : 3
+ 4-bit comparator greater                              : 9
+# Multiplexers                                         : 112
+ 1-bit 2-to-1 multiplexer                              : 96
+ 10-bit 2-to-1 multiplexer                             : 3
+ 15-bit 2-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 12
+# Xors                                                 : 42
+ 1-bit xor2                                            : 42
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <tmdsclkint_0> in Unit <dvi_out_native> is equivalent to the following 4 FFs/Latches, which will be removed : <tmdsclkint_1> <tmdsclkint_2> <tmdsclkint_3> <tmdsclkint_4> 
+INFO:Xst:2261 - The FF/Latch <n1q_m_0> in Unit <encode> is equivalent to the following FF/Latch, which will be removed : <n0q_m_0> 
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <n1q_m_0> is unconnected in block <encode>.
+
+Optimizing unit <mb_system_dvi_out_native_0_wrapper> ...
+
+Optimizing unit <DRAM16XN> ...
+
+Optimizing unit <dvi_out_native> ...
+
+Optimizing unit <encode> ...
+WARNING:Xst:1710 - FF/Latch <cnt_0> (without init value) has a constant value of 0 in block <encode>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <convert_30to15_fifo> ...
+WARNING:Xst:1710 - FF/Latch <dvi_out_native_0/enc0/encg/c1_q> (without init value) has a constant value of 0 in block <mb_system_dvi_out_native_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dvi_out_native_0/enc0/encg/c0_q> (without init value) has a constant value of 0 in block <mb_system_dvi_out_native_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dvi_out_native_0/enc0/encr/c1_q> (without init value) has a constant value of 0 in block <mb_system_dvi_out_native_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dvi_out_native_0/enc0/encr/c0_q> (without init value) has a constant value of 0 in block <mb_system_dvi_out_native_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dvi_out_native_0/enc0/encg/c1_reg> (without init value) has a constant value of 0 in block <mb_system_dvi_out_native_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dvi_out_native_0/enc0/encg/c0_reg> (without init value) has a constant value of 0 in block <mb_system_dvi_out_native_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dvi_out_native_0/enc0/encr/c1_reg> (without init value) has a constant value of 0 in block <mb_system_dvi_out_native_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dvi_out_native_0/enc0/encr/c0_reg> (without init value) has a constant value of 0 in block <mb_system_dvi_out_native_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <dvi_out_native_0/enc0/encb/de_reg> in Unit <mb_system_dvi_out_native_0_wrapper> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_out_native_0/enc0/encg/de_reg> <dvi_out_native_0/enc0/encr/de_reg> 
+INFO:Xst:2261 - The FF/Latch <dvi_out_native_0/enc0/encb/de_q> in Unit <mb_system_dvi_out_native_0_wrapper> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_out_native_0/enc0/encg/de_q> <dvi_out_native_0/enc0/encr/de_q> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block mb_system_dvi_out_native_0_wrapper, actual ratio is 1.
+
+Final Macro Processing ...
+
+Processing Unit <mb_system_dvi_out_native_0_wrapper> :
+	Found 2-bit shift register for signal <dvi_out_native_0/enc0/encb/c1_reg>.
+	Found 2-bit shift register for signal <dvi_out_native_0/enc0/encb/c0_reg>.
+	Found 2-bit shift register for signal <dvi_out_native_0/enc0/encb/de_reg>.
+Unit <mb_system_dvi_out_native_0_wrapper> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 182
+ Flip-Flops                                            : 182
+# Shift Registers                                      : 3
+ 2-bit shift register                                  : 3
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : mb_system_dvi_out_native_0_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 283
+#      GND                         : 1
+#      INV                         : 4
+#      LUT2                        : 11
+#      LUT3                        : 42
+#      LUT4                        : 34
+#      LUT5                        : 73
+#      LUT6                        : 114
+#      MUXF7                       : 3
+#      VCC                         : 1
+# FlipFlops/Latches                : 185
+#      FD                          : 99
+#      FDC                         : 47
+#      FDE                         : 33
+#      FDP                         : 1
+#      FDR                         : 1
+#      FDRE                        : 4
+# RAMS                             : 30
+#      RAM16X1D                    : 30
+# Shift Registers                  : 3
+#      SRLC16E                     : 3
+# IO Buffers                       : 4
+#      OBUFDS                      : 4
+# Others                           : 9
+#      BUFPLL                      : 1
+#      OSERDES2                    : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             185  out of  54576     0%  
+ Number of Slice LUTs:                  341  out of  27288     1%  
+    Number used as Logic:               278  out of  27288     1%  
+    Number used as Memory:               63  out of   6408     0%  
+       Number used as RAM:               60
+       Number used as SRL:                3
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    365
+   Number with an unused Flip Flop:     180  out of    365    49%  
+   Number with an unused LUT:            24  out of    365     6%  
+   Number of fully used LUT-FF pairs:   161  out of    365    44%  
+   Number of unique control sets:         9
+
+IO Utilization: 
+ Number of IOs:                          40
+ Number of bonded IOBs:                   8  out of    218     3%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                 | Load  |
+-----------------------------------+---------------------------------------+-------+
+clkx2in                            | NONE(dvi_out_native_0/toggle)         | 55    |
+clkin                              | NONE(dvi_out_native_0/enc0/encb/cnt_4)| 163   |
+-----------------------------------+---------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.007ns (Maximum Frequency: 199.718MHz)
+   Minimum input arrival time before clock: 3.797ns
+   Maximum output required time after clock: 1.161ns
+   Maximum combinational path delay: 3.150ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkx2in'
+  Clock period: 2.881ns (frequency: 347.120MHz)
+  Total number of paths / destination ports: 219 / 93
+-------------------------------------------------------------------------
+Delay:               2.881ns (Levels of Logic = 1)
+  Source:            dvi_out_native_0/enc0/pixel2x/sync_gen (FF)
+  Destination:       dvi_out_native_0/enc0/pixel2x/sync_gen (FF)
+  Source Clock:      clkx2in rising
+  Destination Clock: clkx2in rising
+
+  Data Path: dvi_out_native_0/enc0/pixel2x/sync_gen to dvi_out_native_0/enc0/pixel2x/sync_gen
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             50   0.447   1.547  dvi_out_native_0/enc0/pixel2x/sync_gen (dvi_out_native_0/enc0/pixel2x/sync)
+     INV:I->O              1   0.206   0.579  dvi_out_native_0/enc0/pixel2x/sync_INV_27_o1_INV_0 (dvi_out_native_0/enc0/pixel2x/sync_INV_27_o)
+     FDR:D                     0.102          dvi_out_native_0/enc0/pixel2x/sync_gen
+    ----------------------------------------
+    Total                      2.881ns (0.755ns logic, 2.126ns route)
+                                       (26.2% logic, 73.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkin'
+  Clock period: 5.007ns (frequency: 199.718MHz)
+  Total number of paths / destination ports: 4065 / 244
+-------------------------------------------------------------------------
+Delay:               5.007ns (Levels of Logic = 4)
+  Source:            dvi_out_native_0/enc0/encb/din_q_0 (FF)
+  Destination:       dvi_out_native_0/enc0/encb/n0q_m_3 (FF)
+  Source Clock:      clkin rising
+  Destination Clock: clkin rising
+
+  Data Path: dvi_out_native_0/enc0/encb/din_q_0 to dvi_out_native_0/enc0/encb/n0q_m_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              16   0.447   1.005  dvi_out_native_0/enc0/encb/din_q_0 (dvi_out_native_0/enc0/encb/din_q_0)
+     LUT5:I4->O           10   0.205   0.857  dvi_out_native_0/enc0/encb/decision11 (dvi_out_native_0/enc0/encb/decision1)
+     LUT6:I5->O            5   0.205   1.059  dvi_out_native_0/enc0/encb/ADDERTREE_INTERNAL_Madd5_xor<0>11 (dvi_out_native_0/enc0/encb/ADDERTREE_INTERNAL_Madd_05)
+     LUT6:I1->O            2   0.203   0.721  dvi_out_native_0/enc0/encb/Msub_PWR_4_o_BUS_0017_sub_29_OUT_cy<1>11 (dvi_out_native_0/enc0/encb/Msub_PWR_4_o_BUS_0017_sub_29_OUT_cy<1>)
+     LUT6:I4->O            1   0.203   0.000  dvi_out_native_0/enc0/encb/Msub_PWR_4_o_BUS_0017_sub_29_OUT_xor<3>11 (dvi_out_native_0/enc0/encb/PWR_4_o_BUS_0017_sub_29_OUT<3>)
+     FD:D                      0.102          dvi_out_native_0/enc0/encb/n0q_m_3
+    ----------------------------------------
+    Total                      5.007ns (1.365ns logic, 3.642ns route)
+                                       (27.3% logic, 72.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkx2in'
+  Total number of paths / destination ports: 4 / 3
+-------------------------------------------------------------------------
+Offset:              2.146ns (Levels of Logic = 1)
+  Source:            dvi_out_native_0/ioclk_buf:LOCK (PAD)
+  Destination:       dvi_out_native_0/toggle (FF)
+  Destination Clock: clkx2in rising
+
+  Data Path: dvi_out_native_0/ioclk_buf:LOCK to dvi_out_native_0/toggle
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BUFPLL:LOCK            1   0.000   0.684  dvi_out_native_0/ioclk_buf (dvi_out_native_0/bufpll_lock)
+     LUT2:I0->O            9   0.203   0.829  dvi_out_native_0/serdes_rst1 (dvi_out_native_0/serdes_rst)
+     FDC:CLR                   0.430          dvi_out_native_0/toggle
+    ----------------------------------------
+    Total                      2.146ns (0.633ns logic, 1.513ns route)
+                                       (29.5% logic, 70.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkin'
+  Total number of paths / destination ports: 364 / 85
+-------------------------------------------------------------------------
+Offset:              3.797ns (Levels of Logic = 4)
+  Source:            blue_din<5> (PAD)
+  Destination:       dvi_out_native_0/enc0/encb/n1d_3 (FF)
+  Destination Clock: clkin rising
+
+  Data Path: blue_din<5> to dvi_out_native_0/enc0/encb/n1d_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT2:I0->O            2   0.203   0.981  dvi_out_native_0/enc0/encb/ADDERTREE_INTERNAL_Madd_lut<0>1 (dvi_out_native_0/enc0/encb/ADDERTREE_INTERNAL_Madd_lut<0>)
+     LUT6:I0->O            3   0.203   0.898  dvi_out_native_0/enc0/encb/ADDERTREE_INTERNAL_Madd41 (dvi_out_native_0/enc0/encb/ADDERTREE_INTERNAL_Madd4)
+     LUT5:I1->O            3   0.203   0.898  dvi_out_native_0/enc0/encb/ADDERTREE_INTERNAL_Madd4_lut<0>11 (dvi_out_native_0/enc0/encb/ADDERTREE_INTERNAL_Madd4_lut<0>1)
+     LUT5:I1->O            1   0.203   0.000  dvi_out_native_0/enc0/encb/ADDERTREE_INTERNAL_Madd4_xor<0>31 (dvi_out_native_0/enc0/encb/ADDERTREE_INTERNAL_Madd_24)
+     FD:D                      0.102          dvi_out_native_0/enc0/encb/n1d_2
+    ----------------------------------------
+    Total                      3.797ns (1.019ns logic, 2.778ns route)
+                                       (26.8% logic, 73.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkx2in'
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Offset:              1.161ns (Levels of Logic = 0)
+  Source:            dvi_out_native_0/tmdsclkint_0 (FF)
+  Destination:       dvi_out_native_0/clkout/oserdes_m:D1 (PAD)
+  Source Clock:      clkx2in rising
+
+  Data Path: dvi_out_native_0/tmdsclkint_0 to dvi_out_native_0/clkout/oserdes_m:D1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               5   0.447   0.714  dvi_out_native_0/tmdsclkint_0 (dvi_out_native_0/tmdsclkint_0)
+    OSERDES2:D1                0.000          dvi_out_native_0/clkout/oserdes_s
+    ----------------------------------------
+    Total                      1.161ns (0.447ns logic, 0.714ns route)
+                                       (38.5% logic, 61.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 67 / 59
+-------------------------------------------------------------------------
+Delay:               3.150ns (Levels of Logic = 1)
+  Source:            dvi_out_native_0/clkout/oserdes_m:OQ (PAD)
+  Destination:       TMDS<3> (PAD)
+
+  Data Path: dvi_out_native_0/clkout/oserdes_m:OQ to TMDS<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    OSERDES2:OQ            1   0.000   0.579  dvi_out_native_0/clkout/oserdes_m (dvi_out_native_0/tmdsclk)
+     OBUFDS:I->O               2.571          dvi_out_native_0/TMDS3 (TMDS<3>)
+    ----------------------------------------
+    Total                      3.150ns (2.571ns logic, 0.579ns route)
+                                       (81.6% logic, 18.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clkin
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkin          |    5.007|         |         |         |
+clkx2in        |    1.767|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clkx2in
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkin          |    1.671|         |         |         |
+clkx2in        |    2.881|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.99 secs
+ 
+--> 
+
+Total memory usage is 258628 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

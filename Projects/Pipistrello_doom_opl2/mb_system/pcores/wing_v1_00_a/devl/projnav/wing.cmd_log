@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "J:/Documents/Projects/Pipistrello_v2.0/MBduino/mb_system/pcores/wing_v1_00_a/devl/projnav/wing.xst" -ofn "J:/Documents/Projects/Pipistrello_v2.0/MBduino/mb_system/pcores/wing_v1_00_a/devl/projnav/wing.syr" 
+xst -intstyle ise -ifn "J:/Documents/Projects/Pipistrello_v2.0/MBduino/mb_system/pcores/wing_v1_00_a/devl/projnav/wing.xst" -ofn "J:/Documents/Projects/Pipistrello_v2.0/MBduino/mb_system/pcores/wing_v1_00_a/devl/projnav/wing.syr" 
+xst -intstyle ise -ifn "J:/Documents/Projects/Pipistrello_v2.0/MBduino/mb_system/pcores/wing_v1_00_a/devl/projnav/wing.xst" -ofn "J:/Documents/Projects/Pipistrello_v2.0/MBduino/mb_system/pcores/wing_v1_00_a/devl/projnav/wing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-3 wing.ngc wing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wing_map.ncd wing.ngd wing.pcf 
+par -w -intstyle ise -ol high -mt off wing_map.ncd wing.ncd wing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wing.twx wing.ncd -o wing.twr wing.pcf 
+xst -intstyle ise -ifn "J:/Documents/Projects/Pipistrello_v2.0/MBduino/mb_system/pcores/wing_v1_00_a/devl/projnav/wing.xst" -ofn "J:/Documents/Projects/Pipistrello_v2.0/MBduino/mb_system/pcores/wing_v1_00_a/devl/projnav/wing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-3 wing.ngc wing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o wing_map.ncd wing.ngd wing.pcf 
+par -w -intstyle ise -ol high -mt off wing_map.ncd wing.ncd wing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml wing.twx wing.ncd -o wing.twr wing.pcf 

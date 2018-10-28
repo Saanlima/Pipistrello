@@ -1,0 +1,4 @@
+SET_ERROR_CODE 0
+SET_XMDF_PATH ./MCB3_LPDDR_xmdf.tcl
+SET_PARAMETER component_name MCB3_LPDDR
+SET_PARAMETER xml_input_file ./MCB3_LPDDR/user_design/mig.prj

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+########################################################################
+##
+## Copyright (c) 2009 Xilinx, Inc.  All rights reserved.
+##
+########################################################################
+-->
+
+<!DOCTYPE doc SYSTEM "../../ipdialog.dtd" [
+	<!ENTITY C_DEFAULT_TFT_BASE_ADDR '
+	<widget id="C_DEFAULT_TFT_BASE_ADDR">
+		<key>C_DEFAULT_TFT_BASE_ADDR</key>
+		<label>Base Address of AXI Attached Video Memory</label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_TFT_INTERFACE '
+	<widget id="C_TFT_INTERFACE">
+		<key>C_TFT_INTERFACE</key>
+		<label>Select TFT Interface</label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_I2C_SLAVE_ADDR '
+	<widget id="C_I2C_SLAVE_ADDR">
+		<key>C_I2C_SLAVE_ADDR</key>
+		<label>I2C Slave Address of External Chrontel DVI Transmitter</label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_BASEADDR '
+	<widget id="C_BASEADDR">
+		<key>C_BASEADDR</key>
+		<label>Base Address of XPS TFT Controller</label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_HIGHADDR '
+	<widget id="C_HIGHADDR">
+		<key>C_HIGHADDR</key>
+		<label>High Address of XPS TFT Controller</label>
+		<tip></tip>
+	</widget>
+	'>
+]>
+
+<doc>
+	<view id="User">
+		<display>User</display>
+		<group id="All">
+		    <display>All</display>
+			<item>&C_TFT_INTERFACE;</item>
+			<item>&C_I2C_SLAVE_ADDR;</item>
+			<item>&C_DEFAULT_TFT_BASE_ADDR;</item>
+		</group>
+	</view>
+	<view id="System">
+		<display>System</display>
+		<group id="Addresses">
+			<display>Addresses</display>
+			<item>&C_BASEADDR;</item>
+			<item>&C_HIGHADDR;</item>
+		</group>
+		<group id="MST">
+			<display>MPLB</display>
+			<item>&C_MST_AWIDTH;</item>
+			<item>&C_MST_DWIDTH;</item>
+		</group>
+		<group id="SLV">
+			<display>SPLB</display>
+			<item>&C_SLV_DWIDTH;</item>
+		</group>
+		<group id="Hidden">
+			<display>Hidden</display>
+			<item>&C_FAMILY;</item>
+		</group>
+	</view>
+</doc>

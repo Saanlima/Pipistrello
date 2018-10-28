@@ -1,0 +1,43 @@
+Release 14.7 - libgen Xilinx EDK 14.7 Build EDK_P.20131013
+ (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../mb_system_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+WARNING:EDK:411 - uartlite -
+   D:\Documents\Projects\Pipistrello_v2.0\Pipistrello_dvi565_doom_opl2_new\Works
+   pace\standalone_bsp\system.mss line 19 - deprecated driver!
+WARNING:EDK:411 - bram -
+   D:\Documents\Projects\Pipistrello_v2.0\Pipistrello_dvi565_doom_opl2_new\Works
+   pace\standalone_bsp\system.mss line 31 - deprecated driver!
+WARNING:EDK:411 - bram -
+   D:\Documents\Projects\Pipistrello_v2.0\Pipistrello_dvi565_doom_opl2_new\Works
+   pace\standalone_bsp\system.mss line 37 - deprecated driver!
+WARNING:EDK:411 - intc -
+   D:\Documents\Projects\Pipistrello_v2.0\Pipistrello_dvi565_doom_opl2_new\Works
+   pace\standalone_bsp\system.mss line 43 - deprecated driver!
+WARNING:EDK:411 - spi -
+   D:\Documents\Projects\Pipistrello_v2.0\Pipistrello_dvi565_doom_opl2_new\Works
+   pace\standalone_bsp\system.mss line 49 - deprecated driver!
+WARNING:EDK:411 - cpu -
+   D:\Documents\Projects\Pipistrello_v2.0\Pipistrello_dvi565_doom_opl2_new\Works
+   pace\standalone_bsp\system.mss line 12 - deprecated processor!
+WARNING:EDK:411 - standalone -
+   D:\Documents\Projects\Pipistrello_v2.0\Pipistrello_dvi565_doom_opl2_new\Works
+   pace\standalone_bsp\system.mss line 5 - deprecated os!
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-multiply-high
+-mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c  -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-multiply-high
+-mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c  -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"'.
+Running execs_generate.

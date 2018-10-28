@@ -1,0 +1,8 @@
+-batch 
+-create sound 
+-ver 1.00.a 
+-dir "J:\Documents\Projects\Pipistrello_v2.0\MBduino_dvi3_sound\mb_system" 
+-lang verilog 
+-bus axi4lite s 
+-reg 4 
+-xps 

@@ -1,0 +1,205 @@
+--------------------------------------------------------------------------------
+Release 14.4 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml wing.twx wing.ncd -o wing.twr wing.pcf
+
+Design file:              wing.ncd
+Physical constraint file: wing.pcf
+Device,package,speed:     xc6slx45,csg324,C,-3 (PRODUCTION 1.23 2012-12-04)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock S_AXI_ACLK
+---------------+------------+------------+------------+------------+------------------+--------+
+               |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source         | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+---------------+------------+------------+------------+------------+------------------+--------+
+S_AXI_ARADDR<2>|    7.025(R)|      SLOW  |   -1.275(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_ARADDR<3>|    6.737(R)|      SLOW  |   -1.087(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_ARADDR<4>|    6.672(R)|      SLOW  |   -1.184(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_ARADDR<5>|    6.072(R)|      SLOW  |   -1.263(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_ARADDR<6>|    7.149(R)|      SLOW  |   -1.375(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_ARESETN  |    8.996(R)|      SLOW  |   -0.902(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_ARVALID  |   12.001(R)|      SLOW  |   -2.686(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_AWADDR<2>|    7.770(R)|      SLOW  |   -1.889(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_AWADDR<3>|    7.881(R)|      SLOW  |   -1.942(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_AWADDR<4>|    6.955(R)|      SLOW  |   -1.427(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_AWADDR<5>|    5.956(R)|      SLOW  |   -1.210(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_AWADDR<6>|    6.924(R)|      SLOW  |   -1.258(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_AWVALID  |    5.870(R)|      SLOW  |   -0.807(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_BREADY   |    2.857(R)|      SLOW  |   -1.264(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RREADY   |    2.542(R)|      SLOW  |   -1.224(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<0> |    4.179(R)|      SLOW  |   -0.991(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<1> |    4.621(R)|      SLOW  |   -1.810(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<2> |    4.908(R)|      SLOW  |   -1.247(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<3> |    5.643(R)|      SLOW  |   -1.619(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<4> |    5.929(R)|      SLOW  |   -0.974(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<5> |    5.128(R)|      SLOW  |   -0.976(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<6> |    5.970(R)|      SLOW  |   -1.472(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<7> |    4.266(R)|      SLOW  |   -0.551(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<8> |    3.311(R)|      SLOW  |   -0.366(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<9> |    5.578(R)|      SLOW  |   -1.548(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<10>|    4.703(R)|      SLOW  |   -0.370(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<11>|    4.757(R)|      SLOW  |   -0.749(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<12>|    5.910(R)|      SLOW  |   -1.408(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<13>|    5.241(R)|      SLOW  |   -0.775(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<14>|    6.107(R)|      SLOW  |   -1.649(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<15>|    3.514(R)|      SLOW  |   -0.450(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<16>|    1.527(R)|      SLOW  |   -0.575(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<17>|    1.475(R)|      SLOW  |   -0.720(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<18>|    2.082(R)|      SLOW  |   -0.908(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<19>|    3.242(R)|      SLOW  |   -0.959(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<20>|    2.225(R)|      SLOW  |   -0.855(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<21>|    2.520(R)|      SLOW  |   -0.899(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<22>|    1.337(R)|      SLOW  |   -0.162(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<23>|    1.087(R)|      FAST  |   -0.400(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<24>|    1.071(R)|      FAST  |   -0.442(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<25>|    1.016(R)|      FAST  |    0.016(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<26>|    1.345(R)|      SLOW  |   -0.610(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<27>|    1.112(R)|      FAST  |   -0.290(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<28>|    1.632(R)|      SLOW  |   -0.992(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<29>|    3.031(R)|      SLOW  |   -1.467(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<30>|    3.080(R)|      SLOW  |   -1.651(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WDATA<31>|    1.559(R)|      SLOW  |   -0.580(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WVALID   |    5.702(R)|      SLOW  |   -1.253(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_IN<0>     |    2.757(R)|      SLOW  |   -1.909(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_IN<1>     |    2.923(R)|      SLOW  |   -2.017(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_IN<2>     |    2.694(R)|      SLOW  |   -1.856(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_IN<3>     |    2.576(R)|      SLOW  |   -1.779(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_IN<4>     |    2.822(R)|      SLOW  |   -1.940(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_IN<5>     |    2.903(R)|      SLOW  |   -1.998(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_IN<6>     |    2.729(R)|      SLOW  |   -1.843(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_IN<7>     |    2.839(R)|      SLOW  |   -1.947(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_IN<8>     |    2.142(R)|      SLOW  |   -1.500(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_IN<9>     |    2.129(R)|      SLOW  |   -1.516(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_IN<10>    |    2.274(R)|      SLOW  |   -1.591(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_IN<11>    |    2.178(R)|      SLOW  |   -1.485(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_IN<12>    |    2.380(R)|      SLOW  |   -1.622(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_IN<13>    |    2.305(R)|      SLOW  |   -1.605(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_IN<14>    |    2.385(R)|      SLOW  |   -1.592(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_IN<15>    |    2.148(R)|      SLOW  |   -1.466(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+---------------+------------+------------+------------+------------+------------------+--------+
+
+Clock S_AXI_ACLK to Pad
+---------------+-----------------+------------+-----------------+------------+------------------+--------+
+               |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination    |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+---------------+-----------------+------------+-----------------+------------+------------------+--------+
+S_AXI_ARREADY  |        13.400(R)|      SLOW  |         5.634(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_AWREADY  |        14.222(R)|      SLOW  |         6.183(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_BVALID   |         8.800(R)|      SLOW  |         4.885(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<0> |        12.047(R)|      SLOW  |         6.816(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<1> |        11.876(R)|      SLOW  |         6.734(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<2> |        11.765(R)|      SLOW  |         6.673(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<3> |        12.005(R)|      SLOW  |         6.779(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<4> |        11.837(R)|      SLOW  |         6.706(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<5> |        11.708(R)|      SLOW  |         6.630(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<6> |        11.956(R)|      SLOW  |         6.785(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<7> |        11.765(R)|      SLOW  |         6.647(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<8> |        11.700(R)|      SLOW  |         6.625(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<9> |        11.720(R)|      SLOW  |         6.622(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<10>|        11.875(R)|      SLOW  |         6.738(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<11>|        10.916(R)|      SLOW  |         6.154(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<12>|        11.356(R)|      SLOW  |         6.433(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<13>|        11.369(R)|      SLOW  |         6.403(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<14>|        10.956(R)|      SLOW  |         6.199(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<15>|        10.841(R)|      SLOW  |         6.091(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<16>|        10.437(R)|      SLOW  |         5.865(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<17>|        10.554(R)|      SLOW  |         5.941(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<18>|        10.381(R)|      SLOW  |         5.825(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<19>|        10.195(R)|      SLOW  |         5.705(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<20>|        10.787(R)|      SLOW  |         6.069(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<21>|        10.183(R)|      SLOW  |         5.708(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<22>|        10.050(R)|      SLOW  |         5.649(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<23>|         9.692(R)|      SLOW  |         5.410(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<24>|        10.317(R)|      SLOW  |         5.843(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<25>|        10.140(R)|      SLOW  |         5.700(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<26>|         9.871(R)|      SLOW  |         5.552(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<27>|         9.972(R)|      SLOW  |         5.588(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<28>|        10.245(R)|      SLOW  |         5.781(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<29>|        10.030(R)|      SLOW  |         5.646(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<30>|        10.117(R)|      SLOW  |         5.699(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<31>|        10.026(R)|      SLOW  |         5.637(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RVALID   |         8.578(R)|      SLOW  |         4.770(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WREADY   |        13.888(R)|      SLOW  |         5.925(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_DIR<0>    |         9.590(R)|      SLOW  |         5.138(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_DIR<1>    |         9.705(R)|      SLOW  |         5.211(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_DIR<2>    |        10.100(R)|      SLOW  |         5.214(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_DIR<3>    |         9.759(R)|      SLOW  |         5.383(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_DIR<4>    |        10.228(R)|      SLOW  |         5.175(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_DIR<5>    |         9.829(R)|      SLOW  |         5.161(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_DIR<6>    |         9.969(R)|      SLOW  |         5.186(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_DIR<7>    |         9.979(R)|      SLOW  |         5.512(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_DIR<8>    |         9.839(R)|      SLOW  |         5.281(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_DIR<9>    |        10.535(R)|      SLOW  |         5.418(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_DIR<10>   |         9.350(R)|      SLOW  |         4.896(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_DIR<11>   |         9.669(R)|      SLOW  |         5.192(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_DIR<12>   |        10.093(R)|      SLOW  |         5.652(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_DIR<13>   |         9.775(R)|      SLOW  |         5.113(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_DIR<14>   |         9.744(R)|      SLOW  |         5.042(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_DIR<15>   |        10.170(R)|      SLOW  |         5.359(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_INT       |        11.806(R)|      SLOW  |         6.007(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_LED1      |        10.377(R)|      SLOW  |         4.940(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_LED2      |        11.377(R)|      SLOW  |         5.543(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_LED3      |        11.851(R)|      SLOW  |         5.958(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_LED4      |        12.422(R)|      SLOW  |         5.931(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_OUT<0>    |        12.046(R)|      SLOW  |         4.691(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_OUT<1>    |        12.455(R)|      SLOW  |         4.590(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_OUT<2>    |        12.125(R)|      SLOW  |         4.666(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_OUT<3>    |        11.676(R)|      SLOW  |         5.067(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_OUT<4>    |        11.522(R)|      SLOW  |         4.535(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_OUT<5>    |        12.213(R)|      SLOW  |         4.483(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_OUT<6>    |        11.248(R)|      SLOW  |         4.688(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_OUT<7>    |        12.046(R)|      SLOW  |         4.802(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_OUT<8>    |        14.187(R)|      SLOW  |         4.850(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_OUT<9>    |        15.130(R)|      SLOW  |         5.542(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_OUT<10>   |        15.039(R)|      SLOW  |         5.338(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_OUT<11>   |        12.959(R)|      SLOW  |         5.193(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_OUT<12>   |        13.462(R)|      SLOW  |         5.381(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_OUT<13>   |        13.396(R)|      SLOW  |         5.369(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_OUT<14>   |        15.060(R)|      SLOW  |         5.109(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+WING_OUT<15>   |        12.599(R)|      SLOW  |         5.158(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+---------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock S_AXI_ACLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+S_AXI_ACLK     |    8.417|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sat Mar 09 09:38:56 2013 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 282 MB
+
+
+

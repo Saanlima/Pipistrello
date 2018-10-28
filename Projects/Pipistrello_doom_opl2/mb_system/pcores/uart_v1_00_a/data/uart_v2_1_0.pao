@@ -1,0 +1,12 @@
+##############################################################################
+## Filename:          J:/Documents/Projects/Pipistrello_v2.0/MBduino/mb_system/pcores/uart_v1_00_a/data/uart_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Wed Mar 06 22:18:44 2013 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib uart_v1_00_a uart_rx6 verilog
+lib uart_v1_00_a uart_tx6 verilog
+lib uart_v1_00_a user_logic verilog
+lib uart_v1_00_a uart vhdl

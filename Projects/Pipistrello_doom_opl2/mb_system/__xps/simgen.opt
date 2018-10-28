@@ -1,0 +1,1 @@
+ -p spartan6 -lang verilog$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -msg __xps/ise/xmsgprops.lst -s isim -X D:/Documents/Projects/Pipistrello_v2.0/Pipistrello_dvi565_doom_opl2_new/mb_system/

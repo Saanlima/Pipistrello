@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="timebase.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="timebase.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="timebase.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="timebase.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="timebase.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="timebase.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="timebase.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="timebase.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="timebase.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="timebase.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="timebase.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="timebase.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="timebase.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="timebase.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="timebase.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="timebase.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="timebase.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="timebase.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="timebase.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="timebase.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="timebase_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="timebase_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="timebase_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="timebase_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="timebase_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="timebase_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="timebase_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="timebase_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="timebase_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="timebase_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="timebase_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="timebase_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="timebase_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="timebase_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="timebase_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="user_logic.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="user_logic.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="user_logic.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1362359978" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1362359978">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1362359978" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="1249825379344494366" xil_pn:start_ts="1362359978">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1362359978" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-925575619849829201" xil_pn:start_ts="1362359978">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1362359978" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1362359978">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1362359978" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="769776125000645536" xil_pn:start_ts="1362359978">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1362359978" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="8977612015756273942" xil_pn:start_ts="1362359978">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1362359978" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="1275371151551379001" xil_pn:start_ts="1362359978">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1362360107" xil_pn:in_ck="-2969276643894189080" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="1121766108659393182" xil_pn:start_ts="1362360098">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="timebase.lso"/>
+      <outfile xil_pn:name="timebase.ngc"/>
+      <outfile xil_pn:name="timebase.ngr"/>
+      <outfile xil_pn:name="timebase.prj"/>
+      <outfile xil_pn:name="timebase.stx"/>
+      <outfile xil_pn:name="timebase.syr"/>
+      <outfile xil_pn:name="timebase.xst"/>
+      <outfile xil_pn:name="timebase_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1362359984" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-3103079007643325365" xil_pn:start_ts="1362359984">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1362360112" xil_pn:in_ck="6028905354617262480" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1656641608965203536" xil_pn:start_ts="1362360107">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="timebase.bld"/>
+      <outfile xil_pn:name="timebase.ngd"/>
+      <outfile xil_pn:name="timebase_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1362360131" xil_pn:in_ck="6028905354617262481" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="4245753365082497697" xil_pn:start_ts="1362360112">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="timebase.pcf"/>
+      <outfile xil_pn:name="timebase_map.map"/>
+      <outfile xil_pn:name="timebase_map.mrp"/>
+      <outfile xil_pn:name="timebase_map.ncd"/>
+      <outfile xil_pn:name="timebase_map.ngm"/>
+      <outfile xil_pn:name="timebase_map.xrpt"/>
+      <outfile xil_pn:name="timebase_summary.xml"/>
+      <outfile xil_pn:name="timebase_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1362360145" xil_pn:in_ck="-4961962087197785814" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-3829590541433901613" xil_pn:start_ts="1362360131">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="timebase.ncd"/>
+      <outfile xil_pn:name="timebase.pad"/>
+      <outfile xil_pn:name="timebase.par"/>
+      <outfile xil_pn:name="timebase.ptwx"/>
+      <outfile xil_pn:name="timebase.unroutes"/>
+      <outfile xil_pn:name="timebase.xpi"/>
+      <outfile xil_pn:name="timebase_pad.csv"/>
+      <outfile xil_pn:name="timebase_pad.txt"/>
+      <outfile xil_pn:name="timebase_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1362360145" xil_pn:in_ck="6028905354617262349" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1362360140">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="timebase.twr"/>
+      <outfile xil_pn:name="timebase.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

@@ -1,0 +1,42 @@
+// File: D:\Documents\Projects\Pipistrello_v2.0\Pipistrello_dvi565_doom_opl2_new\mb_system\implementation\mb_system_stub.bmm
+
+ADDRESS_MAP microblaze_0 MICROBLAZE-LE 100
+	ADDRESS_SPACE microblaze_0_bram_block_combined COMBINED [0x00000000:0x0000ffff]
+		ADDRESS_RANGE RAMB16
+		BUS_BLOCK
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_0 [31:31] INPUT = microblaze_0_bram_block_combined_0.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_1 [30:30] INPUT = microblaze_0_bram_block_combined_1.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_2 [29:29] INPUT = microblaze_0_bram_block_combined_2.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_3 [28:28] INPUT = microblaze_0_bram_block_combined_3.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_4 [27:27] INPUT = microblaze_0_bram_block_combined_4.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_5 [26:26] INPUT = microblaze_0_bram_block_combined_5.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_6 [25:25] INPUT = microblaze_0_bram_block_combined_6.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_7 [24:24] INPUT = microblaze_0_bram_block_combined_7.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_8 [23:23] INPUT = microblaze_0_bram_block_combined_8.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_9 [22:22] INPUT = microblaze_0_bram_block_combined_9.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_10 [21:21] INPUT = microblaze_0_bram_block_combined_10.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_11 [20:20] INPUT = microblaze_0_bram_block_combined_11.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_12 [19:19] INPUT = microblaze_0_bram_block_combined_12.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_13 [18:18] INPUT = microblaze_0_bram_block_combined_13.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_14 [17:17] INPUT = microblaze_0_bram_block_combined_14.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_15 [16:16] INPUT = microblaze_0_bram_block_combined_15.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_16 [15:15] INPUT = microblaze_0_bram_block_combined_16.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_17 [14:14] INPUT = microblaze_0_bram_block_combined_17.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_18 [13:13] INPUT = microblaze_0_bram_block_combined_18.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_19 [12:12] INPUT = microblaze_0_bram_block_combined_19.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_20 [11:11] INPUT = microblaze_0_bram_block_combined_20.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_21 [10:10] INPUT = microblaze_0_bram_block_combined_21.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_22 [9:9] INPUT = microblaze_0_bram_block_combined_22.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_23 [8:8] INPUT = microblaze_0_bram_block_combined_23.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_24 [7:7] INPUT = microblaze_0_bram_block_combined_24.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_25 [6:6] INPUT = microblaze_0_bram_block_combined_25.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_26 [5:5] INPUT = microblaze_0_bram_block_combined_26.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_27 [4:4] INPUT = microblaze_0_bram_block_combined_27.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_28 [3:3] INPUT = microblaze_0_bram_block_combined_28.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_29 [2:2] INPUT = microblaze_0_bram_block_combined_29.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_30 [1:1] INPUT = microblaze_0_bram_block_combined_30.mem ;
+			mb_system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_31 [0:0] INPUT = microblaze_0_bram_block_combined_31.mem ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+END_ADDRESS_MAP;

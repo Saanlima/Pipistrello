@@ -1,0 +1,25 @@
+##############################################################################
+## Filename:          J:/Documents/Projects/Pipistrello_v2.0/MBduino_dvi3_sound/mb_system/pcores/sound_v1_00_a/data/sound_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Fri Nov 01 16:56:57 2013 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib sound_v1_00_a user_logic verilog
+lib sound_v1_00_a dac verilog
+lib sound_v1_00_a syn_fifo verilog
+lib sound_v1_00_a calc_phase_inc verilog
+lib sound_v1_00_a calc_rhythm_phase verilog
+lib sound_v1_00_a edge_detector verilog
+lib sound_v1_00_a env_rate_counter verilog
+lib sound_v1_00_a envelope_generator verilog
+lib sound_v1_00_a ksl_add_rom verilog
+lib sound_v1_00_a operator verilog
+lib sound_v1_00_a opl3_exp_lut verilog
+lib sound_v1_00_a opl3_log_sine_lut verilog
+lib sound_v1_00_a phase_generator verilog
+lib sound_v1_00_a tremolo verilog
+lib sound_v1_00_a vibrato verilog
+lib sound_v1_00_a opl2 verilog
+lib sound_v1_00_a sound vhdl

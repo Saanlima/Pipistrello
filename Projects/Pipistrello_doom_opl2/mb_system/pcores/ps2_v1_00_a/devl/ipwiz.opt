@@ -1,0 +1,8 @@
+-batch 
+-create ps2 
+-ver 1.00.a 
+-dir "J:\Documents\Projects\Pipistrello_v2.0\Pipistrello_dvi565_2\mb_system" 
+-lang verilog 
+-bus axi4lite s 
+-reg 1 
+-xps 

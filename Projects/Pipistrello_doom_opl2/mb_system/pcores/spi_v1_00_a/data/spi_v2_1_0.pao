@@ -1,0 +1,10 @@
+##############################################################################
+## Filename:          J:/Documents/Projects/Pipistrello_v2.0/MBduino/mb_system/pcores/spi_v1_00_a/data/spi_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Mon Mar 11 18:50:24 2013 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib spi_v1_00_a user_logic verilog
+lib spi_v1_00_a spi vhdl

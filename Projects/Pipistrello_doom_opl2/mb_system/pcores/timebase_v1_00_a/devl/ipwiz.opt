@@ -1,0 +1,10 @@
+-batch 
+-create timebase 
+-ver 1.00.a 
+-dir "J:\Documents\Projects\Pipistrello_v2.0\MBduino\mb_system" 
+-lang verilog 
+-bus axi4lite s 
+-reg 4 
+-xps 
+-ise 
+-driver 

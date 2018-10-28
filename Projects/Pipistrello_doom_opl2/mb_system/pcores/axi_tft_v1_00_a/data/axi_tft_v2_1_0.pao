@@ -1,0 +1,23 @@
+
+###############################################################################
+##
+## axi_tft_v1_00_a.pao
+##
+## Peripheral Analyze Order File
+##
+###############################################################################
+
+lib proc_common_v3_00_a         all
+lib axi_lite_ipif_v1_01_a       all
+lib axi_master_burst_v1_00_a    all
+
+lib axi_tft_v1_00_a iic_init.v         verilog
+lib axi_tft_v1_00_a slave_register.v   verilog
+lib axi_tft_v1_00_a line_buffer.v      verilog
+lib axi_tft_v1_00_a h_sync.v           verilog
+lib axi_tft_v1_00_a v_sync.v           verilog
+lib axi_tft_v1_00_a tft_interface.v    verilog
+lib axi_tft_v1_00_a tft_controller.v   verilog
+lib axi_tft_v1_00_a axi_tft.vhd        vhdl
+
+

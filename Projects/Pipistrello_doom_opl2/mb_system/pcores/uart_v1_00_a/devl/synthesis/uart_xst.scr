@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "J:\Documents\Projects\Pipistrello_v2.0\MBduino\mb_system\pcores\uart_v1_00_a\devl\synthesis\uart_xst.prj"
+-top uart
+-p virtex6
+-ofn "J:\Documents\Projects\Pipistrello_v2.0\MBduino\mb_system\pcores\uart_v1_00_a\devl\synthesis\uart_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib uart_v1_00_a
