@@ -1,2 +1,2 @@
 # Pipistrello
-Pipistrello FPGA board by Saanlima Electronics
+Projects for Pipistrello FPGA board by Saanlima Electronics
