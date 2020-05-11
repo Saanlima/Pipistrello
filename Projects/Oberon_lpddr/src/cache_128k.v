@@ -1,7 +1,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 //
 // Filename: cache_128k.v
-// Description: 2-way, 128-set cache with 256 byte cache lines
+// Description: 2-way, 256-set cache with 256 byte cache lines
 // Version 1.0
 // Creation date: May10, 2020
 //
