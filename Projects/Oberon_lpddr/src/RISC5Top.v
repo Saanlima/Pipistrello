@@ -36,7 +36,7 @@ module RISC5Top(
   output LED5,
   input [7:0] swi,
   output [7:0] leds,
-  output [7:0] gpio
+  inout [7:0] gpio
   );
 
 // IO addresses for input / output
@@ -89,7 +89,7 @@ wire [7:0] gpin;
 wire [2:0] RGB;
 wire hsync, vsync, vde;
 
-wire clkfbout, pllclk0, pllclk1, pllclk2;
+wire clkfbout, pllclk0, pllclk1, pllclk2, pllclk3;
 wire pll_locked;
 wire clk;
 reg rst;
@@ -120,7 +120,6 @@ PLL_BASE # (
 BUFG pclkbufg (.I(pllclk1), .O(pclk));
 BUFG pclkx2bufg (.I(pllclk2), .O(pclkx2));
 BUFG clk25buf(.I(pllclk3), .O(clk));
-
 
 RISC5 riscx(.clk(clk), .rst(rst), .ce(CE), .rd(rd), .wr(wr), .ben(ben), .stallX(1'b0),
    .adr(adr), .codebus(inbus0), .inbus(inbus), .outbus(outbus));
