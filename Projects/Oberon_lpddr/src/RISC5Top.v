@@ -33,10 +33,10 @@ module RISC5Top(
   output LED2,
   output LED3,
   output LED4,
-  output LED5,
-  input [7:0] swi,
-  output [7:0] leds,
-  inout [7:0] gpio
+  output LED5 //,
+//  input [7:0] swi,
+//  output [7:0] leds,
+//  inout [7:0] gpio
   );
 
 // IO addresses for input / output
@@ -53,7 +53,7 @@ module RISC5Top(
 
 wire NEN;
 wire [3:0] btn = {SWITCH, 3'b000};
-//wire [7:0] swi = 8'b10000000;
+wire [7:0] swi = 8'b10000000;
 
 wire[23:0] adr;
 wire [3:0] iowadr; // word address
@@ -83,8 +83,8 @@ wire [31:0] vram_rdata;
 wire [14:0] vidadr;
 wire [31:0] viddata;
 
-reg [7:0] gpout, gpoc;
-wire [7:0] gpin;
+//reg [7:0] gpout, gpoc;
+//wire [7:0] gpin;
 
 wire [2:0] RGB;
 wire hsync, vsync, vde;
@@ -158,16 +158,16 @@ assign inbus = (~ioenb & ~vram_access) ? inbus0 : (~ioenb & vram_access ? vram_r
     (iowadr == 5) ? {31'b0, spiRdy} :
     (iowadr == 6) ? {3'b0, rdyKbd, dataMs} :
     (iowadr == 7) ? {24'b0, dataKbd} :
-    (iowadr == 8) ? {24'b0, gpin} :
-    (iowadr == 9) ? {24'b0, gpoc} :
-    (iowadr == 15) ? {8'b0, display} :
-    0));
+//    (iowadr == 8) ? {24'b0, gpin} :
+//    (iowadr == 9) ? {24'b0, gpoc} :
+    (iowadr == 15) ? {8'b0, display} : 0));
 
 assign ram_be[0] = ~ben | (~adr[1] & ~adr[0]);
 assign ram_be[1] = ~ben | (~adr[1] & adr[0]);
 assign ram_be[2] = ~ben | (adr[1] & ~adr[0]);
 assign ram_be[3] = ~ben | (adr[1] & adr[0]);
 
+/*
 genvar i;
 generate // tri-state buffer for gpio port
   for (i = 0; i < 8; i = i+1)
@@ -175,6 +175,7 @@ generate // tri-state buffer for gpio port
     IOBUF gpiobuf (.I(gpout[i]), .O(gpin[i]), .IO(gpio[i]), .T(~gpoc[i]));
   end
 endgenerate
+*/
 
 assign dataTx = outbus[7:0];
 assign startTx = wr & ioenb & (iowadr == 2);
@@ -189,7 +190,7 @@ assign LED2 = Lreg[1];
 assign LED3 = Lreg[2]; 
 assign LED4 = Lreg[3]; 
 assign LED5 = ~SS[0];
-assign leds = Lreg;
+//assign leds = Lreg;
 
 always @(posedge clk)
 begin
@@ -199,8 +200,8 @@ begin
   cnt1 <= cnt1 + limit;
   spiCtrl <= ~rst ? 0 : (wr & ioenb & (iowadr == 5)) ? outbus[3:0] : spiCtrl;
   bitrate <= ~rst ? 0 : (wr & ioenb & (iowadr == 3)) ? outbus[0] : bitrate;
-  gpout <= (wr & ioenb & (iowadr == 8)) ? outbus[7:0] : gpout;
-  gpoc <= ~rst ? 0 : (wr & ioenb & (iowadr == 9)) ? outbus[7:0] : gpoc;
+//  gpout <= (wr & ioenb & (iowadr == 8)) ? outbus[7:0] : gpout;
+//  gpoc <= ~rst ? 0 : (wr & ioenb & (iowadr == 9)) ? outbus[7:0] : gpoc;
   display <= (wr & ioenb & (iowadr == 15)) ? outbus[23:0] : display;
 end
 

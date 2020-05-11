@@ -128,29 +128,29 @@ NET  "mcb3_rzq"         LOC = "N4" ;
 
 
 # Wing A
-NET "gpio[7]"          LOC = "L15"  | IOSTANDARD = LVCMOS33 ;
-NET "gpio[6]"          LOC = "M16"  | IOSTANDARD = LVCMOS33 ;
-NET "gpio[5]"          LOC = "N17"  | IOSTANDARD = LVCMOS33 ;
-NET "gpio[4]"          LOC = "N16"  | IOSTANDARD = LVCMOS33 ;
-NET "gpio[3]"          LOC = "P16"  | IOSTANDARD = LVCMOS33 ;
-NET "gpio[2]"          LOC = "P17"  | IOSTANDARD = LVCMOS33 ;
-NET "gpio[1]"          LOC = "T17"  | IOSTANDARD = LVCMOS33 ;
-NET "gpio[0]"          LOC = "U18"  | IOSTANDARD = LVCMOS33 ;
+#NET "gpio[7]"          LOC = "L15"  | IOSTANDARD = LVCMOS33 ;
+#NET "gpio[6]"          LOC = "M16"  | IOSTANDARD = LVCMOS33 ;
+#NET "gpio[5]"          LOC = "N17"  | IOSTANDARD = LVCMOS33 ;
+#NET "gpio[4]"          LOC = "N16"  | IOSTANDARD = LVCMOS33 ;
+#NET "gpio[3]"          LOC = "P16"  | IOSTANDARD = LVCMOS33 ;
+#NET "gpio[2]"          LOC = "P17"  | IOSTANDARD = LVCMOS33 ;
+#NET "gpio[1]"          LOC = "T17"  | IOSTANDARD = LVCMOS33 ;
+#NET "gpio[0]"          LOC = "U18"  | IOSTANDARD = LVCMOS33 ;
 
 # Wing C
-NET "leds[0]"          LOC = "L12"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
-NET "leds[1]"          LOC = "K12"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
-NET "leds[2]"          LOC = "K13"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
-NET "leds[3]"          LOC = "K14"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
-NET "leds[4]"          LOC = "H12"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
-NET "leds[5]"          LOC = "G13"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
-NET "leds[6]"          LOC = "J13"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
-NET "leds[7]"          LOC = "H13"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
-NET "swi[0]"           LOC = "H14"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN ;
-NET "swi[1]"           LOC = "F14"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN ;
-NET "swi[2]"           LOC = "G14"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN ;
-NET "swi[3]"           LOC = "F15"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN ;
-NET "swi[4]"           LOC = "G16"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN ;
-NET "swi[5]"           LOC = "E16"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN ;
-NET "swi[6]"           LOC = "F16"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN ;
-NET "swi[7]"           LOC = "F17"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN ;
+#NET "leds[0]"          LOC = "L12"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
+#NET "leds[1]"          LOC = "K12"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
+#NET "leds[2]"          LOC = "K13"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
+#NET "leds[3]"          LOC = "K14"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
+#NET "leds[4]"          LOC = "H12"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
+#NET "leds[5]"          LOC = "G13"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
+#NET "leds[6]"          LOC = "J13"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
+#NET "leds[7]"          LOC = "H13"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;
+#NET "swi[0]"           LOC = "H14"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN ;
+#NET "swi[1]"           LOC = "F14"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN ;
+#NET "swi[2]"           LOC = "G14"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN ;
+#NET "swi[3]"           LOC = "F15"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN ;
+#NET "swi[4]"           LOC = "G16"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN ;
+#NET "swi[5]"           LOC = "E16"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN ;
+#NET "swi[6]"           LOC = "F16"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN ;
+#NET "swi[7]"           LOC = "F17"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN ;
