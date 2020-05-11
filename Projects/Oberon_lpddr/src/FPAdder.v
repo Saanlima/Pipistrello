@@ -19,7 +19,7 @@ CONSEQUENTIAL DAMAGES OR ANY DAMAGES OR LIABILITY WHATSOEVER, WHETHER IN
 AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE DEALINGS IN OR USE OR PERFORMANCE OF THE SOFTWARE.*/
 
-// NW 20.9.2015  pipelined
+// NW 4.10.2016  pipelined
 // u = 1: FLT; v = 1: FLOOR
 
 module FPAdder(
@@ -30,7 +30,7 @@ module FPAdder(
 
 reg [1:0] State;
 
-wire xs, ys;  // signs
+wire xs, ys, xn, yn;  // signs
 wire [7:0] xe, ye;
 wire [24:0] xm, ym;
 
@@ -53,9 +53,11 @@ reg [24:0] t3;
 assign xs = x[31];  // sign x
 assign xe = u ? 8'h96 : x[30:23];  // expo x
 assign xm = {~u|x[23], x[22:0], 1'b0};  //mant x
+assign xn = (x[30:0] == 0);
 assign ys = y[31];  // sign y
 assign ye = y[30:23];  // expo y
 assign ym = {~u&~v, y[22:0], 1'b0};  //mant y
+assign yn = (y[30:0] == 0);
 
 assign dx = xe - ye;
 assign dy = ye - xe;
@@ -143,9 +145,8 @@ assign stall = run & ~(State == 3);
 always @ (posedge(clk)) if(ce) State <= run ? State + 1 : 0;
 
 assign z = v ? {{7{Sum[26]}}, Sum[25:1]} :  // FLOOR
-    (x[30:0] == 0) ? (~u ? y : 0) :
-    (y[30:0] == 0) ? x :
+    xn ? (u|yn ? 0 : y) :   // FLT or x = y = 0
+    yn ? x :
     ((t3 == 0) | e1[8]) ? 0 : 
 	 {Sum[26], e1[7:0], t3[23:1]};
 endmodule
-

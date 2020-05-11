@@ -26,7 +26,7 @@ CONNECTION WITH THE DEALINGS IN OR USE OR PERFORMANCE OF THE SOFTWARE.*/
 module RS232T(
     input clk, rst,
     input start, // request to accept and send a byte
-	 input fsel,  // frequency selection
+    input fsel,  // frequency selection
     input [7:0] data,
     output rdy,
     output TxD);

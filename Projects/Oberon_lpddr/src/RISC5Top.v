@@ -135,7 +135,7 @@ VID vid(.pclk(pclk), .clk(clk), .req(dspreq), .inv(swi[7]), .vidadr(vidadr),
    .viddata(viddata), .RGB(RGB), .hsync(hsync), .vsync(vsync), .vde(vde));
 PS2 kbd(.clk(clk), .rst(rst), .done(doneKbd), .rdy(rdyKbd), .shift(),
    .data(dataKbd), .PS2C(PS2C), .PS2D(PS2D));
-MouseM Ms(.clk(clk), .rst(rst), .msclk(msclk), .msdat(msdat), .out(dataMs));
+MousePM Ms(.clk(clk), .rst(rst), .msclk(msclk), .msdat(msdat), .out(dataMs));
 DVI dvi(.clkx1in(pclk), .clkx2in(pclkx2), .clkx10in(pllclk0), .pll_locked(pll_locked),
    .reset(~rst), .red_in({8{RGB[2]}}), .green_in({8{RGB[1]}}), .blue_in({8{RGB[0]}}),
    .hsync(hsync), .vsync(vsync), .vde(vde), .TMDS(TMDS), .TMDSB(TMDSB));
