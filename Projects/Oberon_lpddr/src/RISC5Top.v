@@ -233,7 +233,7 @@ wire c3_p0_rd_empty;
 wire c3_p0_wr_empty;
 
 cache_128k cache (
-  .addr({3'b000, adr[19:0]}), // due to bug in Oberon code!!! 
+  .addr(adr[22:0]),
   .dout(inbus0), 
   .din(outbus), 
   .clk(clk),

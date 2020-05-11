@@ -8,6 +8,8 @@
 // Author: Magnus Karlsson 
 // e-mail: magnus@saanlima.com
 //
+// Loosely based on cache_controller.v written by Nicolae Dumitrache
+//
 /////////////////////////////////////////////////////////////////////////////////
 // 
 // Copyright (C) 2020 Magnus Karlsson

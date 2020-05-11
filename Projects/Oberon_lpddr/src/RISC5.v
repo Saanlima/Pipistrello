@@ -129,7 +129,7 @@ assign C0 = R[irc];
 // Arithmetic-logical unit (ALU)
 assign ira0 = BR ? 15 : ira;
 assign C1 = q ? {{16{v}}, imm} : C0;
-assign adr = stallL ? B[23:0] + {4'b0, off} : {pcmux, 2'b00};
+assign adr = stallL ? B[23:0] + {{4{off[19]}}, off} : {pcmux, 2'b00};
 assign rd = LDR & ~stallX & ~stall1;
 assign wr = STR & ~stallX & ~stall1;
 assign ben = p & ~q & v & ~stallX & ~stall1;  // byte enable
