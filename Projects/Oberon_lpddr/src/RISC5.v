@@ -217,7 +217,7 @@ assign stallL = (LDR|STR) & ~stall1;
 
 always @ (posedge clk) if(ce) begin
   PC <= pcmux;
-  PMsel <= ~rst | (pcmux[21:12] == 10'h3FF);
+  PMsel <= ~rst | (pcmux[21:10] == 12'hFFE);
   IR <= stall ? IR : codebus;
   stall1 <= stallX ? stall1 : stallL;
   R[ira0] <= regwr ? regmux : A;

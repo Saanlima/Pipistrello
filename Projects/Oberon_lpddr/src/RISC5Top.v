@@ -143,8 +143,8 @@ VRAM vram(.clka(~clk), .adra(vram_base[16:2]), .bea(ram_be), .wea(wr & vram_acce
    .rdb(viddata));
  
 assign iowadr = adr[5:2];
-assign ioenb = (adr[23:6] == 18'h3FFFF);
-assign mreq = ~adr[23] & ~vram_access;
+assign ioenb = (adr[23:12] == 12'hFFF);
+assign mreq = (adr[23:18] != 6'h3F) & ~vram_access;
 assign vram_base = adr[23:0] - display;
 assign vram_access = (vram_base[23:17] == 7'h0) & 
                      ((vram_base[16] == 1'b0) | (vram_base[15] == 1'b0));
@@ -217,7 +217,7 @@ reg [127:0] cache_wdata, next_cache_wdata;
 reg wr_busy, next_wr_busy;
 reg rd_busy, next_rd_busy;
 wire [127:0] cache_rdata;
-wire [22:8] waddr, raddr;
+wire [23:8] waddr, raddr;
 reg mem_wr_sync;
 reg mem_rd_sync;
 
@@ -233,7 +233,7 @@ wire c3_p0_rd_empty;
 wire c3_p0_wr_empty;
 
 cache_128k cache (
-  .addr(adr[22:0]),
+  .addr(adr[23:0]),
   .dout(inbus0), 
   .din(outbus), 
   .clk(clk),
@@ -326,7 +326,7 @@ always @* begin
         next_cache_en = 1'b1;
         next_burst_cnt = 6'd0;
         next_p0_cmd_instr = 3'b000;
-        next_p0_cmd_byte_addr = {7'd0, waddr, 8'd0};
+        next_p0_cmd_byte_addr = {6'd0, waddr, 8'd0};
       end else if (mem_rd_sync) begin
         next_state = READ1;
         next_rd_busy = 1'b1;
@@ -334,7 +334,7 @@ always @* begin
         next_burst_cnt = 6'd0;
         next_p0_cmd_instr = 3'b001;
         next_p0_cmd_en = 1'b1; 
-        next_p0_cmd_byte_addr = {7'd0, raddr, 8'd0};
+        next_p0_cmd_byte_addr = {6'd0, raddr, 8'd0};
       end
     end
     WRITE1: begin
