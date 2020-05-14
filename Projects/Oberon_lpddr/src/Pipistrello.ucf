@@ -9,8 +9,7 @@ TIMESPEC TS_sys_clk = PERIOD "sys_clk" 20 ns HIGH 50 %;
 NET "pllclk3" TNM_NET = "GRP_1";
 NET "lpddr/memc3_infrastructure_inst/clk0_bufg_in" TNM_NET = RAMS "GRP_2";
 TIMESPEC TS_TIG = FROM GRP_1 TO GRP_2 TIG;
-  
-  
+
 # Reset switch
 NET "SWITCH" LOC = "N14" | IOSTANDARD = LVCMOS33 | PULLDOWN ;
 
@@ -126,7 +125,6 @@ NET  "mcb3_dram_we_n"   LOC = "E3" ;
 NET  "mcb3_rzq"         LOC = "N4" ;
 
 
-
 # Wing A
 #NET "gpio[7]"          LOC = "L15"  | IOSTANDARD = LVCMOS33 ;
 #NET "gpio[6]"          LOC = "M16"  | IOSTANDARD = LVCMOS33 ;
@@ -154,3 +152,4 @@ NET  "mcb3_rzq"         LOC = "N4" ;
 #NET "swi[5]"           LOC = "E16"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN ;
 #NET "swi[6]"           LOC = "F16"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN ;
 #NET "swi[7]"           LOC = "F17"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN ;
+

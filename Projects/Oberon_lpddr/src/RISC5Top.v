@@ -33,10 +33,10 @@ module RISC5Top(
   output LED2,
   output LED3,
   output LED4,
-  output LED5 //,
-//  input [7:0] swi,
-//  output [7:0] leds,
-//  inout [7:0] gpio
+  output LED5
+//  input [7:0] swi,    // wing c bits 0 - 7
+//  output [7:0] leds,  // wing c bits 8 - 15
+//  inout [7:0] gpio    // wing a bits 0 - 7
   );
 
 // IO addresses for input / output
@@ -56,16 +56,17 @@ wire [3:0] btn = {SWITCH, 3'b000};
 wire [7:0] swi = 8'b10000000;
 
 wire[23:0] adr;
-wire [3:0] iowadr; // word address
-wire [31:0] inbus, inbus0;  // data to RISC core
-wire [31:0] outbus;  // data from RISC core
-wire rd, wr, ben, ioenb, mreq, dspreq;
+wire [3:0] iowadr;           // word address
+wire [31:0] inbus, inbus0;   // data to RISC core
+wire [31:0] outbus;          // data from RISC core
+wire [31:0] romout, codebus; // code to RISC core
+wire rd, wr, ben, ioenb, mreq;
 
 wire [7:0] dataTx, dataRx, dataKbd;
 wire rdyRx, doneRx, startTx, rdyTx, rdyKbd, doneKbd;
 wire [27:0] dataMs;
 reg bitrate;  // for RS232
-wire limit;  // of cnt0
+wire limit;   // of cnt0
 
 reg [7:0] Lreg;
 reg [15:0] cnt0;
@@ -96,19 +97,19 @@ reg rst;
 wire [3:0] ram_be;
 
 PLL_BASE # (
-  .CLKIN_PERIOD(20),
-  .CLKFBOUT_MULT(15),
-  .CLKOUT0_DIVIDE(1),
-  .CLKOUT1_DIVIDE(10),
-  .CLKOUT2_DIVIDE(5),
-  .CLKOUT3_DIVIDE(30),
+  .CLKIN_PERIOD(20),     // 20ns     =  50 MHz
+  .CLKFBOUT_MULT(15),    // 50MHz*15 = 750 MHz
+  .CLKOUT0_DIVIDE(1),    // 750/1    = 750 MHz
+  .CLKOUT1_DIVIDE(10),   // 750/10   =  75 MHz
+  .CLKOUT2_DIVIDE(5),    // 750/5    = 150 MHz
+  .CLKOUT3_DIVIDE(30),   // 750/30   =  25 MHz
   .COMPENSATION("INTERNAL")
 ) pll_blk (
   .CLKFBOUT(clkfbout),
-  .CLKOUT0(pllclk0),   // 750 MHz
-  .CLKOUT1(pllclk1),   // 75 MHz
-  .CLKOUT2(pllclk2),   // 150 MHz
-  .CLKOUT3(pllclk3),   // 25 MHz
+  .CLKOUT0(pllclk0),    // 750 MHz
+  .CLKOUT1(pllclk1),    // 75 MHz
+  .CLKOUT2(pllclk2),    // 150 MHz
+  .CLKOUT3(pllclk3),    // 25 MHz
   .CLKOUT4(),
   .CLKOUT5(),
   .LOCKED(pll_locked),
@@ -121,29 +122,42 @@ BUFG pclkbufg (.I(pllclk1), .O(pclk));
 BUFG pclkx2bufg (.I(pllclk2), .O(pclkx2));
 BUFG clk25buf(.I(pllclk3), .O(clk));
 
-RISC5 riscx(.clk(clk), .rst(rst), .ce(CE), .rd(rd), .wr(wr), .ben(ben), .stallX(1'b0),
-   .adr(adr), .codebus(inbus0), .inbus(inbus), .outbus(outbus));
+RISC5 riscx(.clk(clk), .rst(rst), .ce(CE), .irq(limit),
+   .rd(rd), .wr(wr), .ben(ben), .stallX(1'b0),
+   .adr(adr), .codebus(codebus), .inbus(inbus),
+   .outbus(outbus));
+
+PROM PM (.adr(adr[10:2]), .data(romout), .clk(~clk));
+
 RS232R receiver(.clk(clk), .rst(rst), .RxD(RxD), .fsel(bitrate), .done(doneRx),
    .data(dataRx), .rdy(rdyRx));
+
 RS232T transmitter(.clk(clk), .rst(rst), .start(startTx), .fsel(bitrate),
    .data(dataTx), .TxD(TxD), .rdy(rdyTx));
+
 SPI spi(.clk(clk), .rst(rst), .start(spiStart), .dataTx(outbus),
    .fast(spiCtrl[2]), .dataRx(spiRx), .rdy(spiRdy),
    .SCLK(SCLK[0]), .MOSI(MOSI[0]), .MISO(MISO[0] & MISO[1]));
-VID vid(.pclk(pclk), .clk(clk), .req(dspreq), .inv(swi[7]), .vidadr(vidadr),
+
+VID vid(.pclk(pclk), .clk(clk), .req(), .inv(swi[7]), .vidadr(vidadr),
    .viddata(viddata), .RGB(RGB), .hsync(hsync), .vsync(vsync), .vde(vde));
+
 PS2 kbd(.clk(clk), .rst(rst), .done(doneKbd), .rdy(rdyKbd), .shift(),
    .data(dataKbd), .PS2C(PS2C), .PS2D(PS2D));
+
 MousePM Ms(.clk(clk), .rst(rst), .msclk(msclk), .msdat(msdat), .out(dataMs));
+
 DVI dvi(.clkx1in(pclk), .clkx2in(pclkx2), .clkx10in(pllclk0), .pll_locked(pll_locked),
    .reset(~rst), .red_in({8{RGB[2]}}), .green_in({8{RGB[1]}}), .blue_in({8{RGB[0]}}),
    .hsync(hsync), .vsync(vsync), .vde(vde), .TMDS(TMDS), .TMDSB(TMDSB));
+
 VRAM vram(.clka(~clk), .adra(vram_base[16:2]), .bea(ram_be), .wea(wr & vram_access),
    .wda(outbus), .rda(vram_rdata), .clkb(~clk), .adrb(vidadr),
    .rdb(viddata));
  
+assign codebus = adr[23:12] == 12'hFFE ? romout : inbus0;
 assign iowadr = adr[5:2];
-assign ioenb = (adr[23:12] == 12'hFFF);
+assign ioenb = (adr[23:6] == 18'h3FFFF);
 assign mreq = (adr[23:18] != 6'h3F) & ~vram_access;
 assign vram_base = adr[23:0] - display;
 assign vram_access = (vram_base[23:17] == 7'h0) & 
@@ -160,7 +174,8 @@ assign inbus = (~ioenb & ~vram_access) ? inbus0 : (~ioenb & vram_access ? vram_r
     (iowadr == 7) ? {24'b0, dataKbd} :
 //    (iowadr == 8) ? {24'b0, gpin} :
 //    (iowadr == 9) ? {24'b0, gpoc} :
-    (iowadr == 15) ? {8'b0, display} : 0));
+    (iowadr == 15) ? {8'b0, display} :
+    0));
 
 assign ram_be[0] = ~ben | (~adr[1] & ~adr[0]);
 assign ram_be[1] = ~ben | (~adr[1] & adr[0]);
@@ -190,7 +205,7 @@ assign LED2 = Lreg[1];
 assign LED3 = Lreg[2]; 
 assign LED4 = Lreg[3]; 
 assign LED5 = ~SS[0];
-//assign leds = Lreg;
+assign leds = Lreg;
 
 always @(posedge clk)
 begin
