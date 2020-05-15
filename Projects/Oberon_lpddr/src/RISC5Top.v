@@ -27,7 +27,7 @@ module RISC5Top(
 //  output NEN,  // network enable
   output [3:0] TMDS,
   output [3:0] TMDSB,
-  inout PS2C, PS2D,    // keyboard
+  input PS2C, PS2D,    // keyboard
   inout msclk, msdat,  // mouse
   output LED1,
   output LED2,
@@ -53,7 +53,7 @@ module RISC5Top(
 
 wire NEN;
 wire [3:0] btn = {SWITCH, 3'b000};
-wire [7:0] swi = 8'b10000000;
+wire [7:0] swi = 8'b00000000;
 
 wire[23:0] adr;
 wire [3:0] iowadr;           // word address
@@ -163,7 +163,7 @@ assign vram_base = adr[23:0] - display;
 assign vram_access = (vram_base[23:17] == 7'h0) & 
                      ((vram_base[16] == 1'b0) | (vram_base[15] == 1'b0));
 
-assign inbus = (~ioenb & ~vram_access) ? inbus0 : (~ioenb & vram_access ? vram_rdata :
+assign inbus = (~ioenb & ~vram_access) ? codebus : (~ioenb & vram_access ? vram_rdata :
    ((iowadr == 0) ? cnt1 :
     (iowadr == 1) ? {20'b0, btn, swi} :
     (iowadr == 2) ? {24'b0, dataRx} :
